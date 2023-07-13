@@ -1,0 +1,11 @@
+
+.input{
+    font-size: 18px;
+    width: 100%;
+    padding: 24px 0;
+    border-bottom: 1px solid #DDD;
+
+    &:focus{
+        border-bottom-color: var(--black-color);
+    }
+}

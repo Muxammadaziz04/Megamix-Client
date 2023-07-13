@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
     padding: 27px 0;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
 
     &>div:first-child,
     &>div:nth-child(3) {
@@ -53,8 +57,6 @@
             opacity: 0.699999988079071;
         }
     }
-
-    position: relative;
 
     &::after {
         content: '';

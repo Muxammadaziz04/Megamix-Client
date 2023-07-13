@@ -1,0 +1,40 @@
+
+
+.advantage{
+    width: 100%;
+    padding: 118px 0;
+
+    &__container{
+        display: flex;  
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title{
+        font-size: 24px;
+    }
+
+    &__list{
+        display: flex;
+
+        & > *{
+            max-width: calc(100% / 4);
+            width: 100%;
+        }
+
+        &__card{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 40px;
+            padding-top: 76px;
+            gap: 77px;
+            border: 1px solid #E1E1E1;
+            transition: all 0.3s;
+
+            &:hover{
+                transform: translateY(-20px);
+            }
+        }
+    }
+}

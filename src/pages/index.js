@@ -1,9 +1,11 @@
+import HomePage from "components/Pages/Home";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
   return (
-    <div>
-    </div>
+    <>
+    <HomePage />
+    </>
   )
 }
 
