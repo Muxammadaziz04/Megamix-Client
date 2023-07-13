@@ -1,0 +1,21 @@
+
+.partners{
+    width: 100%;
+    padding: 100px 0;
+
+    &__title{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__image{
+        border: 1px solid rgba(43, 42, 41, 0.10);
+        padding: 21px 34px;
+
+        & > div{
+            width: 220px;
+            height: 130px;
+            position: relative;
+        }
+    }
+}

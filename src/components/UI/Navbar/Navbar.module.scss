@@ -1,0 +1,95 @@
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 27px 0;
+
+    &>div:first-child,
+    &>div:nth-child(3) {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    &>div:nth-child(3) {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        &__input {
+            width: 50px;
+            transition: all 0.3s;
+
+            &:focus {
+                animation: inputAnimate 0.5s ease;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &>span {
+            display: block;
+            width: 1px;
+            height: 16px;
+            background-color: var(--black-color) !important;
+            opacity: 0.699999988079071;
+        }
+    }
+
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 405px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('/right.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.onBlurInput {
+    animation: inputClose 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inputAnimate {
+    0% {
+        width: 50px;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+@keyframes inputClose {
+    0% {
+        width: 200px;
+    }
+
+    100% {
+        max-width: 50px;
+        width: 50px;    
+    }
+}

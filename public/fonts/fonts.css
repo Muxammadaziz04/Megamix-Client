@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Core Sans A";
+    src: url("/fonts/CoreSans/Regular.otf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Core Sans A";
+    src: url("/fonts/CoreSans/Bold.otf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
