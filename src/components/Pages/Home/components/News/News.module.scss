@@ -1,0 +1,38 @@
+
+.news{
+    padding-top: 146px;
+    padding-bottom: 130px;
+
+    &__container{
+        margin-bottom: 40px;
+    }
+
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 22px;
+    }
+
+    &__slider__btns{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & > button{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: #EAE8E6;
+            }
+        }
+    }
+}

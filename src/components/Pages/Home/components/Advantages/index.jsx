@@ -1,8 +1,8 @@
 import Container from 'components/UI/Container';
-import cls from './Advantage.module.scss'
+import cls from './Advantages.module.scss'
 import { advantages } from './data';
 
-const AdvantageSection = () => {
+const Advantages = () => {
     return (
         <section className={cls.advantage}>
             <Container className={cls.advantage__container}>
@@ -22,4 +22,4 @@ const AdvantageSection = () => {
     );
 }
 
-export default AdvantageSection;
+export default Advantages;

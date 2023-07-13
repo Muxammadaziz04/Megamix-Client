@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "i": "^0.3.7",
     "i18next": "^23.2.11",
     "next": "^12.3.4",
     "next-i18next": "^14.0.0",
+    "npm": "^9.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.0",
     "react-hook-form": "^7.45.1",
     "react-i18next": "^13.0.2",
     "react-input-mask": "^2.0.4",
+    "react-responsive-carousel": "^3.2.23",
     "react-yandex-maps": "^4.6.0",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "swiper": "^10.0.0"
   },
   "devDependencies": {
     "eslint": "8.44.0",

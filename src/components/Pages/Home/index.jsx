@@ -1,12 +1,18 @@
-import AdvantageSection from "./components/Advantage";
+import AboutCompany from "./components/AboutCompany";
+import Advantages from "./components/Advantages";
 import Header from "./components/Header";
+import News from "./components/News";
+import Products from "./components/Products";
 
 
 const HomePage = () => {
     return (
         <>
             <Header />   
-            <AdvantageSection />
+            <Advantages />
+            <Products />
+            <News />
+            <AboutCompany />
         </>
     );
 }
