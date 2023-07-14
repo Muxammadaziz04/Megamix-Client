@@ -8,7 +8,7 @@ const ContactMap = () => (
                         geometry={[41.249722, 69.183615]}
                         options={{
                             iconLayout: 'default#image',
-                            iconImageHref: '/placemark.svg',
+                            iconImageHref: '/icons/placemark.svg',
                             iconImageSize: [30, 50],
                             iconImageOffset: [-16, -50],
                         }}

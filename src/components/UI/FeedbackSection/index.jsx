@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import RoundedButton from '../Buttons/RoundedButton';
 import Container from '../Container';
 import Input from '../Form/Input';
 import MaskInput from '../Form/MaskInput';
-import { CopyIcon, PhoneIcon, RightIcon } from '../icons';
+import { CopiedIcon, CopyIcon, PhoneIcon, RightIcon } from '../icons';
 import ContactMap from '../Map';
 import { navLinks, phoneNumbers } from './data';
 import cls from './FeedbackSection.module.scss'
@@ -13,9 +14,11 @@ const location = 'Республика Узбекистана, г. Ташкен�
 
 const FeedbackSection = () => {
     const { control } = useForm()
+    const [copied, setCopied] = useState(false)
 
     const copyLocation = () => {
-        navigator.clipboard.writeText(location)
+        navigator.clipboard?.writeText(location)
+        setCopied(true)
     }
 
     return (
@@ -36,7 +39,13 @@ const FeedbackSection = () => {
                     </form>
                     <div className={cls.feedback__map}>
                         <h4 className={cls.feedback__map__location}>{location}</h4>
-                        <button className={cls.feedback__map__copy} onClick={copyLocation}><CopyIcon />Копировать</button>
+                        <button
+                            className={cls.feedback__map__copy}
+                            onClick={copyLocation}
+                        >
+                            {copied ? <CopiedIcon /> : <CopyIcon />}
+                            {copied ? 'Скопирован' : 'Копировать'}
+                        </button>
                         <ContactMap />
                     </div>
                 </div>

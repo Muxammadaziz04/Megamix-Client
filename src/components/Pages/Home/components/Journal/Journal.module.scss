@@ -1,0 +1,55 @@
+.journal {
+    padding: 120px 0;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &__title {
+        font-size: 22px;
+    }
+
+    &__item {
+        display: flex;
+
+        &>div {
+            max-width: 47%;
+            width: 100%;
+            border: 1px solid rgba(43, 42, 41, 0.10);
+            flex-grow: 1;
+        }
+
+        & > div:nth-child(2){
+            max-width: 53%;
+        }
+
+        &__image {
+            position: relative;
+            max-width: 535px;
+            width: 100%;
+            aspect-ratio: 535/705;
+        }
+
+        &__info {
+            padding: 77px 60px;
+            padding-right: 74px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            &__title {
+                font-size: 32px;
+            }
+
+            &__desc {
+                max-height: 385px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    }
+}

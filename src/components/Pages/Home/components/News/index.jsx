@@ -23,11 +23,8 @@ const News = () => {
                 </div>
             </Container>
             <Swiper
-                speed={500}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                speed={600}
+                autoplay={{ delay: 2500 }}
                 modules={[Autoplay]}
                 centeredSlides
                 slidesPerView={1.65}
@@ -35,19 +32,19 @@ const News = () => {
             >
                 <SwiperSlide>
                     <NewsCard
-                        image='/news.png'
+                        image='/images/news.png'
                         title='Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator. Giving information on its origins, as well as a random Lipsum generator.'
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <NewsCard
-                        image='/news.png'
+                        image='/images/news.png'
                         title='Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator. Giving information on its origins, as well as a random Lipsum generator.'
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <NewsCard
-                        image='/news.png'
+                        image='/images/news.png'
                         title='Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator. Giving information on its origins, as well as a random Lipsum generator.'
                     />
                 </SwiperSlide>

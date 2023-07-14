@@ -1,0 +1,16 @@
+.carousel {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 190/89;
+    position: relative;
+
+    &__title {
+        max-width: 513px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 100;
+        font-family: 'Core Sans A 75 ExtraBold';
+        font-size: 54px;
+    }
+}

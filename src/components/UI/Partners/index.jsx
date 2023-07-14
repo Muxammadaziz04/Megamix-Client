@@ -16,7 +16,7 @@ const Partners = () => {
                 <div className={cls.partners__image}>
                     <div>
                         <Image
-                            src={'/partner.png'}
+                            src={'/images/partner.png'}
                             layout="fill"
                             objectFit="contain"
                             alt="Megamix partner"
@@ -26,7 +26,7 @@ const Partners = () => {
                 <div className={cls.partners__image}>
                     <div>
                         <Image
-                            src={'/partner2.png'}
+                            src={'/images/partner2.png'}
                             layout="fill"
                             objectFit="contain"
                             alt="Megamix partner"

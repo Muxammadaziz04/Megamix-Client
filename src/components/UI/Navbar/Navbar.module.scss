@@ -5,8 +5,9 @@
     padding: 27px 0;
     background-color: #fff;
     position: sticky;
-    top: 0;
     z-index: 1000000;
+    top: 0;
+    border-bottom: 1px solid rgba(43, 42, 41, 0.10);
 
     &>div:first-child,
     &>div:nth-child(3) {
@@ -65,7 +66,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-image: url('/right.svg');
+        background-image: url('/icons/right.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }

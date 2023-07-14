@@ -16,7 +16,7 @@ const Products = () => {
                             <li key={index}>
                                 <ProductCard
                                     title='Granit'
-                                    image='/product.png'
+                                    image='/image/product.png'
                                 />
                             </li>
                         ))
