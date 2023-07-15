@@ -32,6 +32,13 @@
             border: 1px solid #E1E1E1;
             transition: all 0.3s;
 
+            & > div{
+                position: relative;
+                max-width: 50px;
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+
             &:hover{
                 transform: translateY(-20px);
             }

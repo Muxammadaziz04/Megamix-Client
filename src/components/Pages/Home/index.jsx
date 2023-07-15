@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Journal from "./components/Journal";
 import News from "./components/News";
 import Products from "./components/Products";
+import Sertificates from "./components/Sertificates";
 
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
             <Products />
             <News />
             <AboutCompany />
+            <Sertificates />
             <Journal />
             <Carousel />
         </>

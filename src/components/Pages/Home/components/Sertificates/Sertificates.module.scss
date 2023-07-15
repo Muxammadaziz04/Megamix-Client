@@ -1,0 +1,36 @@
+.sertificates {
+    background: rgb(42, 41, 40, 0.05);
+    padding: 110px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title {
+        color: #2B2A29;
+        font-size: 22px;
+    }
+
+    &__block {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__card {
+        max-width: 350px;
+        width: 100%;
+        border: 1px solid rgba(43, 42, 41, 0.10);
+        background: #FFF;
+        padding: 40px;
+        display: flex;
+
+        & > div{
+            width: 100%;
+            max-width: 270px;
+            aspect-ratio: 15/22;
+            position: relative;
+        }
+    }
+}

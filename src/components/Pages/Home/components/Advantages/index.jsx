@@ -1,4 +1,5 @@
 import Container from 'components/UI/Container';
+import Image from 'next/image';
 import cls from './Advantages.module.scss'
 import { advantages } from './data';
 
@@ -11,7 +12,14 @@ const Advantages = () => {
                     {
                         advantages.map(adv => (
                             <li className={cls.advantage__list__card} key={adv.id}>
-                                {adv.icon}
+                                <div>
+                                    <Image 
+                                        src={adv.icon}
+                                        layout='fill'
+                                        objectFit='cover'
+                                        alt='icon'
+                                    />
+                                </div>
                                 {adv.title}
                             </li>
                         ))
