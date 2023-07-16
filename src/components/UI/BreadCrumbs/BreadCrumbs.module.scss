@@ -1,0 +1,27 @@
+
+.breadcrumb{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__title{
+        font-size: 18px;
+    }
+
+    &__items{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 12px;
+        color: rgba(43, 42, 41, 0.6);
+
+        &__children{
+            transition: all 0.3s;
+
+            &:hover{
+                color: rgb(43, 42, 41);
+                opacity: 1;
+            }
+        }
+    }
+}

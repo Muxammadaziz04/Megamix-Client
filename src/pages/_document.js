@@ -15,7 +15,7 @@ export default function Document() {
 
 Document.getInitialProps = async (ctx) => {
     const initialProps = await NextDocument.getInitialProps(ctx)
-    const { locale } = ctx.req.cookies
+    const { locale } = ctx.req?.cookies || {}
     const currentLocale = ctx.locale
 
     if (locale !== currentLocale && locales.includes(locale) && ctx.req.url === '/') {

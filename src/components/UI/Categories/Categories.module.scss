@@ -1,0 +1,20 @@
+.categories {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+
+    &__item {
+        font-size: 18px;
+        padding-bottom: 8px;
+
+    }
+}
+
+.active__link{
+    border-bottom: dotted 4px #000;
+    border-image-source: url("/icons.dots.svg");
+    border-image-slice: 2;
+    border-image-repeat: round;
+    border-image: url("/icons.dots.svg") 2 round;
+}

@@ -9,13 +9,13 @@ const MaskInput = ({
     rules,
     control,
 }) => {
-    return (
+    return control ? (
         <Controller
             name={name}
             defaultValue=''
             control={control}
             rules={rules}
-            render={({field}) => (
+            render={({ field }) => (
                 <ReactInputMask
                     className={cls.input}
                     placeholder={placeholder}
@@ -25,6 +25,12 @@ const MaskInput = ({
                     mask={mask}
                 />
             )}
+        />
+    ) : (
+        <ReactInputMask
+            className={cls.input}
+            placeholder={placeholder}
+            mask={mask}
         />
     );
 }

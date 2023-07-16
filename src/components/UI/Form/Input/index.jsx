@@ -2,13 +2,16 @@ import cls from './Input.module.scss'
 
 const Input = ({
     type = 'text',
-    placeholder = ''
+    placeholder = '',
+    className = '',
+    ...other
 }) => {
     return (
         <input 
-            className={cls.input}
+            className={`${cls.input} ${className}`}
             type={type}
             placeholder={placeholder}
+            {...other}
         />
     );
 }

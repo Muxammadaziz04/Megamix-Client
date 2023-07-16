@@ -7,25 +7,30 @@ import cls from './ProductCard.module.scss'
 const ProductCard = ({
     title = '',
     image = '',
-    link = '/'
+    link = '/',
+    description = '',
+    align = 'flex-start'
 }) => {
     return (
-        <Link href={link}>
-            <a className={cls.card}>
-                <div className={cls.card__info}>
-                    <h3>{title}</h3>
-                    <GrayButton><PlayIcon /> видео инструкция</GrayButton>
-                </div>
-                <div className={cls.card__image}>
-                    <Image
-                        src={image}
-                        objectFit='contain'
-                        layout='fill'
-                        alt={`Megamix ${title}`}
-                    />
-                </div>
-            </a>
-        </Link>
+        <li>
+            <Link href={link}>
+                <a className={cls.card}>
+                    <div className={cls.card__info} style={{alignSelf: align}}>
+                        <h3 style={{'textAlign': align}}>{title}</h3>
+                        <GrayButton><PlayIcon /> видео инструкция</GrayButton>
+                    </div>
+                    <div className={cls.card__image}>
+                        <Image
+                            src={image}
+                            objectFit='contain'
+                            layout='fill'
+                            alt={`Megamix ${title}`}
+                        />
+                    </div>
+                    {description && <p className={cls.card__desc}>{description}</p>}
+                </a>
+            </Link>
+        </li>
     );
 }
 

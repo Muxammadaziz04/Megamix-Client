@@ -13,12 +13,11 @@ const Products = () => {
                 <ul className={cls.products__list}>
                     {
                         Array(6).fill(null).map((_, index) => (
-                            <li key={index}>
-                                <ProductCard
-                                    title='Granit'
-                                    image='/images/product.png'
-                                />
-                            </li>
+                            <ProductCard
+                                key={index}
+                                title='Granit'
+                                image='/images/product.png'
+                            />
                         ))
                     }
                 </ul>

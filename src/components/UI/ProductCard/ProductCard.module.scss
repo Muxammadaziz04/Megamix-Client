@@ -12,6 +12,7 @@
 
     &__info{
         align-self: flex-start;
+        margin-bottom: 18px;
 
         & > h3{
             font-size: 18px;
@@ -24,6 +25,13 @@
         max-width: 268px;
         width: 100%;
         aspect-ratio: 67/77;
+    }
+
+    &__desc{
+        text-align: center;
+        padding-top: 4px;
+        font-size: 13px;
+        color: rgba(43, 42, 41, 0.6);
     }
 
     &:hover{

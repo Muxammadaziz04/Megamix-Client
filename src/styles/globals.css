@@ -1,6 +1,6 @@
 @import url('../../public/fonts/fonts.css');
 
-:root{
+:root {
   --white-color: '#fff';
   --black-color: #2B2A29;
 }
@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   background-color: var(--white-color);
   color: var(--black-color);
-  scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
 }
 
 a {
@@ -35,7 +35,7 @@ button {
   cursor: pointer;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -49,12 +49,12 @@ input {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0;
   font-weight: 400;
 }
@@ -64,18 +64,74 @@ p{
   -webkit-filter: grayscale(100%);
 }
 
-.swiper-slide { width: fit-content }
+input[type='number'] {
+  -moz-appearance:textfield;
+}
 
-.swiper{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.swiper-slide {
+  width: fit-content
+}
+
+.swiper {
   height: 100%;
 }
 
-.swiper-pagination-horizontal{
+.swiper-pagination-horizontal {
   width: auto !important;
   bottom: 120px !important;
   left: 60px !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: #2B2A29 !important;
+}
+
+.ant-pagination {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.ant-pagination > li:hover{
+  background-color: rgba(43, 42, 41, 0.05) !important;
+}
+
+.ant-pagination  *{
+  color: #2B2A29 !important;
+}
+
+.ant-pagination-item-ellipsis{
+left: -30% !important;
+}
+
+.ant-pagination > li {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 63px !important;
+  border-radius: 0 !important;
+  padding: 15px 20px !important;
+  height: auto !important;
+  font-family: 'Core Sans A' !important;
+  font-size: 15px !important;
+  border: 1px solid #EAE8E6;
+  background: #FFF !important;
+  aspect-ratio: 1/1;
+}
+
+.ant-pagination-prev:hover > button,
+.ant-pagination-jump-next:hover > button{
+  background-color: transparent !important;
+}
+
+.ant-pagination-item-active {
+  border-color: #2B2A29 !important;
+}
+
+.ant-pagination-item-active>* {
+  color: #2B2A29 !important;
 }

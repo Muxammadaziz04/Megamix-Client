@@ -1,0 +1,26 @@
+
+.products{
+    background-color: rgba(43, 42, 41, 0.05);
+    padding-top: 25px;
+    padding-bottom: 107px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__list{
+        max-width: 965px;
+        padding-top: 18px;
+        padding-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        & > *{
+            max-width: calc((100% - 5px) / 2);
+            width: 100%;
+        }
+    }
+}
