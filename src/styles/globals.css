@@ -135,3 +135,7 @@ left: -30% !important;
 .ant-pagination-item-active>* {
   color: #2B2A29 !important;
 }
+
+.react-simple-image-viewer__modal{
+  z-index: 1000000 !important;
+}

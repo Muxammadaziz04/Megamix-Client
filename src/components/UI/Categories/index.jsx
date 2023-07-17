@@ -12,7 +12,7 @@ const Categories = ({
                 categories?.length > 0 && categories.map((ctg, index) => (
                     <li
                         key={index}
-                        className={`${cls.categories__item} ${router.asPath === ctg.link ? cls.active__link : ''}`}
+                        className={`${cls.categories__item} ${router.asPath.includes(ctg.link) ? cls.active__link : ''}`}
                     >
                         <Link href={ctg.link}>
                             <a>{ctg.label}</a>

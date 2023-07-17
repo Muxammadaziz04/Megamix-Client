@@ -8,7 +8,7 @@ import cls from './Vacancies.module.scss'
 const VacanciesPage = () => {
     return (
         <div className={cls.vacancies}>
-            <Container className={cls.vacancies__conatiner}>
+            <Container className={cls.vacancies__container}>
                 <BreadCrumbs title='Вакансии' breadCrumbs={breadCrumbs} />
                 <Categories categories={categories} />
                 <ul className={cls.vacancies__list}>

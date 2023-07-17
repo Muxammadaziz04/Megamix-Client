@@ -1,0 +1,34 @@
+.gallery {
+    background-color: rgba(43, 42, 41, 0.05);
+    padding-top: 25px;
+    padding-bottom: 107px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        max-width: 647px;
+        font-family: 'Core Sans A 75 ExtraBold';
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &__list {
+        padding-top: 18px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+
+        & > li{
+            cursor: pointer;
+            max-width: calc((100% - 3px) / 4);
+            width: 100%;
+            position: relative;
+            aspect-ratio: 71/45;
+        }
+    }
+}
