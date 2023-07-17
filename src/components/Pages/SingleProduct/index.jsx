@@ -1,24 +1,9 @@
 import BreadCrumbs from 'components/UI/BreadCrumbs';
 import Container from 'components/UI/Container';
-import Input from 'components/UI/Form/Input';
-import MaskInput from 'components/UI/Form/MaskInput';
 import Image from 'next/image';
 import { useState } from 'react';
+import { breadCrumbs } from './data';
 import cls from './SingleProduct.module.scss'
-
-const breadCrumbs = [
-    {
-        link: '/',
-        label: 'Главная'
-    },
-    {
-        link: '/products',
-        label: 'Продукты'
-    },
-    {
-        label: 'Mono Stop'
-    },
-]
 
 const SingleProductPage = () => {
     const [activeTab, setActiveTab] = useState(1)

@@ -1,0 +1,33 @@
+<svg width="106" height="84" viewBox="0 0 106 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_896_20246" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="106" height="84">
+<rect id="Rectangle 170" x="0.273438" width="105.727" height="83.7383" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_896_20246)">
+<path id="Polygon 4" d="M14.9297 48.3311L112.691 0.849918L112.691 95.8123L14.9297 48.3311Z" fill="#F9D500"/>
+<path id="Polygon 7" d="M3.18359 84.4713L100.945 36.9901L100.945 131.952L3.18359 84.4713Z" fill="#FFE200"/>
+<path id="Polygon 8" opacity="0.8" d="M5.45117 100.744L126.559 41.9188L126.559 159.569L5.45117 100.744Z" fill="url(#paint0_linear_896_20246)"/>
+<path id="Polygon 5" opacity="0.4" d="M42.5 50.5235L140.261 3.0423L140.261 98.0047L42.5 50.5235Z" fill="url(#paint1_linear_896_20246)"/>
+<path id="Polygon 6" opacity="0.5" d="M46.1699 63.4781L143.931 15.9969L143.931 110.959L46.1699 63.4781Z" fill="url(#paint2_linear_896_20246)"/>
+<path id="Polygon 9" opacity="0.4" d="M75.9336 66.3634L173.695 18.8821L173.695 113.845L75.9336 66.3634Z" fill="url(#paint3_linear_896_20246)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_896_20246" x1="31.2441" y1="77.9376" x2="171.525" y2="143.696" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5C00"/>
+<stop offset="1" stop-color="#F9D500"/>
+</linearGradient>
+<linearGradient id="paint1_linear_896_20246" x1="69.4631" y1="76.1836" x2="137.075" y2="36.9952" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5C00"/>
+<stop offset="1" stop-color="#F9D500"/>
+</linearGradient>
+<linearGradient id="paint2_linear_896_20246" x1="90.5234" y1="86.5881" x2="124.464" y2="45.2743" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5C00"/>
+<stop offset="1" stop-color="#F9D500"/>
+</linearGradient>
+<linearGradient id="paint3_linear_896_20246" x1="102.897" y1="92.0235" x2="170.508" y2="52.835" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5C00"/>
+<stop offset="1" stop-color="#F9D500"/>
+</linearGradient>
+</defs>
+</svg>

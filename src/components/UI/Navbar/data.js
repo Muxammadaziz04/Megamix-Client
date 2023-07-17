@@ -12,7 +12,7 @@ export const navbarLinks = [
     {
         id: 3,
         label: 'Пресс-релиз',
-        link: '/press-reliz'
+        link: '/press-release/news'
     },
     {
         id: 4,

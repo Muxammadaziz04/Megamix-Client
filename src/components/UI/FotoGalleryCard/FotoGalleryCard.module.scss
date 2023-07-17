@@ -1,0 +1,39 @@
+.card {
+    width: 100%;
+    &>a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 37/22;
+    }
+
+    &__desc {
+        background-color: #fff;
+        position: relative;
+        padding: 20px;
+        padding-bottom: 37px;
+
+        &>h2 {
+            max-width: 270px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        &::after {
+            content: '';
+            width: 106px;
+            height: 83px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url('/icons/foto-icon.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

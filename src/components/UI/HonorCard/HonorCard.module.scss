@@ -1,0 +1,26 @@
+.card {
+    padding: 34px 30px;
+    border: 1px solid rgba(43, 42, 41, 0.10);
+    background: #FFF;
+
+    &__title {
+        font-family: 'Core Sans A 75 ExtraBold';
+        font-size: 24px;
+        margin-bottom: 11px;
+    }
+
+    &__desc {
+        max-width: 239px;
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    &__img{
+        margin: 0 auto;
+        position: relative;
+        max-width: 227px;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+}

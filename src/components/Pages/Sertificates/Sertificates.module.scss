@@ -1,0 +1,29 @@
+
+.sertificates{
+    background-color: rgba(43, 42, 41, 0.05);
+    padding-top: 25px;
+    padding-bottom: 107px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title{
+        font-size: 22px;
+    }
+
+    &__list{
+        padding-top: 18px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        & > *{
+            max-width: calc((100% - 20px) / 3);
+            width: 100%;
+        }
+    }
+}

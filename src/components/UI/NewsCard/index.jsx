@@ -10,7 +10,7 @@ const NewsCard = ({
     title = ''
 }) => {
     return (
-        <div className={cls.news}>
+        <li className={cls.news}>
             <div className={cls.news__image}>
                 <Image
                     src={image}
@@ -26,7 +26,7 @@ const NewsCard = ({
                     <RoundedButton className={cls.news__btn}>Подробнее</RoundedButton>
                 </Link>
             </div>
-        </div>
+        </li>
     );
 }
 

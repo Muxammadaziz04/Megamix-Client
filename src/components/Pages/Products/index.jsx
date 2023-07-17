@@ -3,29 +3,8 @@ import BreadCrumbs from 'components/UI/BreadCrumbs';
 import Categories from 'components/UI/Categories';
 import Container from 'components/UI/Container';
 import ProductCard from 'components/UI/ProductCard';
+import { breadCrumbs, categories } from './data';
 import cls from './Products.module.scss'
-
-const breadCrumbs = [
-    {
-        link: '/',
-        label: 'Главная'
-    },
-    {
-        link: '/products',
-        label: 'Продукты'
-    },
-]
-
-const categories = [
-    {
-        link: '/products?id=nma',
-        label: 'Сухие смеси'
-    },
-    {
-        link: '/products?id=xne',
-        label: 'Грунтовки'
-    },
-]
 
 const ProductsPage = () => {
     return (

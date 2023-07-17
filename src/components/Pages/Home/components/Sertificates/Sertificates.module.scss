@@ -17,20 +17,4 @@
         display: flex;
         gap: 10px;
     }
-
-    &__card {
-        max-width: 350px;
-        width: 100%;
-        border: 1px solid rgba(43, 42, 41, 0.10);
-        background: #FFF;
-        padding: 40px;
-        display: flex;
-
-        & > div{
-            width: 100%;
-            max-width: 270px;
-            aspect-ratio: 15/22;
-            position: relative;
-        }
-    }
 }

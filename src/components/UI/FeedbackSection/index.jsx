@@ -44,7 +44,7 @@ const FeedbackSection = () => {
                             onClick={copyLocation}
                         >
                             {copied ? <CopiedIcon /> : <CopyIcon />}
-                            {copied ? 'Скопирован' : 'Копировать'}
+                            {copied ? 'Скопировано' : 'Копировать'}
                         </button>
                         <ContactMap />
                     </div>
