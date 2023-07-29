@@ -20,6 +20,7 @@ body {
   background-color: var(--white-color);
   color: var(--black-color);
   scroll-behavior: smooth !important;
+  overflow-x: hidden;
 }
 
 a {
@@ -138,4 +139,11 @@ left: -30% !important;
 
 .react-simple-image-viewer__modal{
   z-index: 1000000 !important;
+}
+
+@media screen and (max-width:852px) {
+  .swiper-pagination-horizontal{
+    bottom: 20px !important;
+    left: 20px !important;
+  }
 }

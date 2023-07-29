@@ -2,6 +2,7 @@ import NextNProgress from 'nextjs-progressbar';
 import Layout from 'components/Layout';
 import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.css'
+import 'hamburgers/dist/hamburgers.min.css'
 
 function MyApp({ Component, pageProps }) {
   return (

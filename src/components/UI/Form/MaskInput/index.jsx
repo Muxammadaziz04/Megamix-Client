@@ -8,6 +8,7 @@ const MaskInput = ({
     name = '',
     rules,
     control,
+    type = 'tel'
 }) => {
     return control ? (
         <Controller
@@ -23,6 +24,7 @@ const MaskInput = ({
                     onBlur={field.onBlur}
                     value={field.value}
                     mask={mask}
+                    type={type}
                 />
             )}
         />

@@ -18,7 +18,7 @@ const Carousel = () => {
                 >
                     <SwiperSlide>
                         <div style={{ position: 'relative' }}>
-                            <h3 className={cls.carousel__title}>Разные полезные ссылки</h3>
+                            {/* <h3 className={cls.carousel__title}>Разные полезные ссылки</h3> */}
                             <div className={cls.carousel}>
                                 <Image
                                     src={'/images/slider.jpg'}
@@ -31,7 +31,7 @@ const Carousel = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div style={{ position: 'relative' }}>
-                            <h3 className={cls.carousel__title}>Разные полезные ссылки</h3>
+                            {/* <h3 className={cls.carousel__title}>Разные полезные ссылки</h3> */}
                             <div className={cls.carousel}>
                                 <Image
                                     src={'/images/slider.jpg'}

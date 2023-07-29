@@ -18,3 +18,33 @@
         gap: 10px;
     }
 }
+
+@media screen and (max-width: 860px) {
+    .sertificates{
+        padding: 70px 0;
+        & ul > *{
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sertificates{
+        & ul > *{
+            padding: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .sertificates{
+        &__block{
+            flex-wrap: wrap;
+            justify-content: center;
+            & > *{
+                max-width: calc((100% - 10px) / 2);
+                width: 100%;
+            }
+        }
+    }
+}

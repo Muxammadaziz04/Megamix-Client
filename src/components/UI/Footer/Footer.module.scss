@@ -35,3 +35,26 @@
         }
     }
 }
+
+@media screen and (max-width: 467px) {
+    .footer{
+        &__copyright{
+            display: none;
+        }
+
+        &__info{
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        &__info{
+            &__developed{
+                font-size: 11px;
+            }
+        }
+    }
+}

@@ -9,3 +9,16 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 710px) {
+    .card{
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .card{
+        max-width: calc((100% - 1px) / 2);
+        width: 100%;
+    }
+}

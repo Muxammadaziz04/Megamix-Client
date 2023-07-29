@@ -7,9 +7,11 @@ import NewsCard from 'components/UI/NewsCard';
 import cls from './News.module.scss'
 
 import 'swiper/css';
+import useWindowWidth from 'hooks/useWindowWidth';
 
 const News = () => {
     const [swiper, setSwiper] = useState()
+    const windowWidth = useWindowWidth()
 
     return (
         <section className={cls.news}>
@@ -27,7 +29,7 @@ const News = () => {
                 autoplay={{ delay: 2500 }}
                 modules={[Autoplay]}
                 centeredSlides
-                slidesPerView={1.65}
+                slidesPerView={windowWidth > 560 ? 1.65 : 1.1}
                 onInit={setSwiper}
             >
                 <SwiperSlide>

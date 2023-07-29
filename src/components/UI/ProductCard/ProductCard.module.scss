@@ -38,3 +38,16 @@
         background: rgba(43, 42, 41, 0.03);
     }
 }
+
+@media screen and (max-width:946px) {
+    .card{
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card{
+        min-height: 380px;
+        padding: 20px;
+    }
+}

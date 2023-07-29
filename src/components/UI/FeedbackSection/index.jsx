@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import copy from 'copy-to-clipboard';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import RoundedButton from '../Buttons/RoundedButton';
@@ -17,7 +18,7 @@ const FeedbackSection = () => {
     const [copied, setCopied] = useState(false)
 
     const copyLocation = () => {
-        navigator.clipboard?.writeText(location)
+        copy(location)
         setCopied(true)
     }
 

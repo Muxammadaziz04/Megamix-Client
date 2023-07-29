@@ -15,6 +15,7 @@
         aspect-ratio: 463/300;
         border-radius: 2px;
         overflow: hidden;
+        flex-shrink: 0;
     }
 
     &__block{
@@ -32,13 +33,12 @@
     }
 
     &__title{
-        flex-grow: 1;
         font-size: 18px;
         line-height: 26px;
         opacity: 0.699999988079071;
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-line-clamp: 4;
                 line-clamp: 4; 
         -webkit-box-orient: vertical;
     }
@@ -48,5 +48,51 @@
         font-weight: 400;
         border: 1px solid rgba(43, 42, 41, 0.30);
 
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .news{
+        &__block{
+            padding: 0;
+            gap: 10px;
+        }
+
+        &__title{
+            -webkit-line-clamp: 7;
+                    line-clamp: 7; 
+        }
+    }
+}
+
+@media screen and (max-width: 1267px) {
+    .news{
+        gap: 35px;
+        &__image{
+            max-width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .news{
+        &__image{
+            max-width: 250px;
+        }
+        &__title{
+            font-size: 15px;
+            -webkit-line-clamp: 3;
+                    line-clamp: 3; 
+        }
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .news{
+        flex-direction: column;
+
+        &__image{
+            max-width: 100%;
+        }
     }
 }

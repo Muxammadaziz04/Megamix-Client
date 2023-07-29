@@ -39,3 +39,44 @@
         }
     }
 }
+
+@media screen and (max-width: 965px) {
+    .journal {
+        &__info {
+            padding: 30px;
+            &__desc {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                line-clamp: 8;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .journal{
+        &__info{
+            &__desc{
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .journal{
+        flex-direction: column;
+        & > div:first-child{
+            border-bottom: none;
+        }
+        &>div {
+            max-width: 100%;
+        }
+        &>div:nth-child(2) {
+            border-top: none;
+            max-width: 100%;
+        }
+    }
+}

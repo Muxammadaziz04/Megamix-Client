@@ -14,8 +14,28 @@
 
         & > div{
             width: 220px;
-            height: 130px;
+            aspect-ratio: 22/13;
             position: relative;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .partners{
+        &__image{
+            & > div{
+                max-width: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partners{
+        &__image{
+            & > div{
+                max-width: 100px;
+            }
         }
     }
 }

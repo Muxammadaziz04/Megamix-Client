@@ -59,3 +59,14 @@
         gap: 1px;
     }
 }
+
+@media screen and (max-width: 602px) {
+    .header{
+        &__container{
+            padding-top: 90px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

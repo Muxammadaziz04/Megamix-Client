@@ -1,9 +1,12 @@
+import useWindowWidth from "hooks/useWindowWidth";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Container from "../Container";
 import cls from './Partners.module.scss'
 
 const Partners = () => {
+    const windowWidth = useWindowWidth()
+
     return (
         <section className={cls.partners}>
             <Container>
@@ -11,7 +14,7 @@ const Partners = () => {
             </Container>
             <Marquee
                 autoFill
-                gradient
+                gradient={windowWidth > 768}
             >
                 <div className={cls.partners__image}>
                     <div>

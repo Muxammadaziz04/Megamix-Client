@@ -45,3 +45,33 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .advantage{
+        padding: 70px 0;
+        &__container{
+            gap: 20px;
+        }
+        &__list{
+            &__card{
+                padding: 30px;
+                gap: 50px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .advantage{
+        &__list{
+            flex-wrap: wrap;
+
+            &__card{
+                gap: 60px;
+                max-width: 50%;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+
+.lang__modal{
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    padding: 15px 18px;
+    transform: translateY(calc(100% + 16px));
+    background-color: white;
+    z-index: 10000;
+    width: 301px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & > *{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 13px;  
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.active{
+    color: rgba(0, 0, 0);
+}
+
+@media screen and (max-width: 430px) {
+    .lang__modal{
+        right: -60px;
+    }
+}

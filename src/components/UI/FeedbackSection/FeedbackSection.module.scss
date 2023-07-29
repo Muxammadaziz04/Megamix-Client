@@ -32,7 +32,7 @@
             left: 40px;
             padding: 4px 10px;
             background: #EAEAEA;
-            z-index: 1000;
+            z-index: 90;
         }
 
         &__copy{
@@ -46,7 +46,7 @@
             background: #434241;
             font-size: 16px;
             color: #fff;
-            z-index: 1000;
+            z-index: 90;
         }
     }
 
@@ -68,6 +68,7 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        flex-wrap: wrap;
 
         & a{
             font-size: 13px;
@@ -78,9 +79,75 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        flex-shrink: 0;
 
         & > a{
             font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .feedback{
+        &__container{
+            gap: 50px;
+        }
+
+        &__block{
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &__map{
+            max-width: 100%;
+            aspect-ratio: 16/11;
+
+            & ymap{
+                width: 100% !important;
+            }
+        }
+
+        &__linklist{
+            justify-content: center;
+            row-gap: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .feedback{
+        &__map{
+            &__location, &__copy{
+                font-size: 13px;
+                left: 20px;
+            }
+
+            &__location{
+                top: 20px;
+            }
+
+            &__copy{
+                top: 53px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .feedback{
+        &__map{
+            &__copy{
+                top: 63px;
+            }
+        }
+
+        &__form > button {
+            width: 100%;
+            justify-content: space-between;
+            & > svg{
+                max-width: 100px;
+                width: 100%;
+            }
         }
     }
 }
