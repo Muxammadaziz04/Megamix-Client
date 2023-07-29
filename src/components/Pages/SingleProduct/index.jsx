@@ -25,6 +25,7 @@ const SingleProductPage = () => {
                                         src='/images/product.png'
                                         layout='fill'
                                         objectFit='contain'
+                                        alt='Mono Stop'
                                     />
                                 </div>
                             </div>

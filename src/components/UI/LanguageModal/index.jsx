@@ -30,8 +30,9 @@ const LanguageModal = () => {
                     layout='fixed'
                     objectFit='cover'
                     quality={100}
+                    alt='Lang'
                 />
-                O'zbekcha
+                O&apos;zbekcha
             </li>
             <li 
                 onClick={() => changeLocale('ru')}
@@ -44,6 +45,7 @@ const LanguageModal = () => {
                     layout='fixed'
                     objectFit='cover'
                     quality={100}
+                    alt='Lang'
                 />
                 Русский
             </li>
@@ -58,6 +60,7 @@ const LanguageModal = () => {
                     layout='fixed'
                     objectFit='cover'
                     quality={100}
+                    alt='Lang'
                 />
                 English
             </li>
@@ -72,6 +75,7 @@ const LanguageModal = () => {
                     layout='fixed'
                     objectFit='cover'
                     quality={100}
+                    alt='Lang'
                 />
                 Türkçe
             </li>
@@ -86,6 +90,7 @@ const LanguageModal = () => {
                     layout='fixed'
                     objectFit='cover'
                     quality={100}
+                    alt='Lang'
                 />
                 Тоҷикӣ
             </li>
