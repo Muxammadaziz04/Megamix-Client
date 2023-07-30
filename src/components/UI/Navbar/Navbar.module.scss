@@ -8,7 +8,7 @@
     z-index: 1000;
     top: 0;
     border-bottom: 1px solid rgba(43, 42, 41, 0.10);
-    overflow: hidden;
+    // overflow-x: hidden;
 
     &>div:first-child,
     &>div:nth-child(3) {
@@ -63,33 +63,44 @@
         }
     }
 
-    &__burger{
+    &__burger {
         display: none !important;
         padding: 0;
 
-        &:hover{
+        &:hover {
             opacity: 1 !important;
         }
 
-        & *::after, & > span > span, & *::before{
+        & *::after,
+        &>span>span,
+        & *::before {
             background-color: var(--black-color) !important;
         }
     }
 
-    &::after {
-        content: '';
-        width: 405px;
-        height: 100%;
+    &__uzor {
         position: absolute;
         top: 0;
-        right: -5%;
-        background-image: url('/icons/right.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        right: 0;
+        width: 405px;
+        height: 100%;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            width: 405px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -5%;
+            background-image: url('/icons/right.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 }
 
-.lang__modal{
+.lang__modal {
     position: absolute;
     bottom: 0;
     right: -10px;
@@ -103,11 +114,11 @@
     flex-wrap: wrap;
     gap: 20px;
 
-    & > *{
+    &>* {
         display: flex;
         align-items: center;
         gap: 5px;
-        font-size: 13px;  
+        font-size: 13px;
     }
 }
 
@@ -120,6 +131,7 @@
     0% {
         width: 50px;
     }
+
     100% {
         max-width: 200px;
         width: 100%;
@@ -134,116 +146,130 @@
 
     100% {
         max-width: 50px;
-        width: 50px;    
+        width: 50px;
     }
 }
 
 @media screen and (max-width: 1564px) {
-    .nav{
+    .nav {
         padding: 20px 0;
 
-        &__container{
+        &__container {
             max-width: 1100px;
         }
 
-        & > div:first-child{        
-            & > a{
-                max-width:  100px;
+        &>div:first-child {
+            &>a {
+                max-width: 100px;
                 margin: 0 15px;
-    
-                & > svg{
+
+                &>svg {
                     max-width: 100%;
                 }
             }
         }
-    
-        &::after{
-            right: -10%;
+
+        &__uzor{
+            &::after {
+                right: -10%;
+            }
         }
     }
 }
 
 @media screen and (max-width: 1380px) {
-    .nav{
-        &__container{
+    .nav {
+        &__container {
             max-width: 72.5%;
         }
     }
 }
 
 @media screen and (max-width: 1310px) {
-    .nav{
-        &__group{
-            &__input{
-                &:focus{
+    .nav {
+        &__group {
+            &__input {
+                &:focus {
                     animation: none;
                 }
             }
         }
     }
 
-    .onBlurInput{
+    .onBlurInput {
         animation: none;
     }
 }
 
 @media screen and (max-width: 1120px) {
-    .nav{
-        &__list{
+    .nav {
+        &__list {
             gap: 15px;
         }
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .nav{
-        &__list{
+    .nav {
+        &__list {
             flex-wrap: wrap;
         }
 
-        &::after{
-            right: -17%;
+        &__uzor{
+            &::after {
+                right: -17%;
+            }
         }
     }
 }
 
 @media screen and (max-width: 768px) {
-    .nav{
-        &__container{
+    .nav {
+        &__container {
             justify-content: flex-end;
         }
-        &__list{
+
+        &__list {
             display: none;
         }
-        &__burger{
+
+        &__burger {
             display: flex !important;
         }
-        &::after{
-            right: -20%;
+
+        &__uzor{
+            &::after {
+                right: -20%;
+            }
         }
     }
 }
 
 @media screen and (max-width: 580px) {
-    .nav{
-        &::after{
-            right: -35%;
+    .nav {
+        &__uzor{
+            &::after {
+                right: -35%;
+            }
         }
     }
 }
 
 @media screen and (max-width: 430px) {
-    .nav{
+    .nav {
         padding: 5px 0;
 
-        & > div:first-child{        
-            & > a{
-                max-width:  90px;
+        &>div:first-child {
+            &>a {
+                max-width: 90px;
                 margin: 0 10px;
             }
         }
-        &::after{
-            right: -50%;
+
+        &__uzor{
+            &::after {
+                right: -50%;
+            }
         }
     }
 }

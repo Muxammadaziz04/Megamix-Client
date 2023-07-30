@@ -72,6 +72,7 @@ const Navbar = () => {
             <div>
                 <Logo />
             </div>
+            <div className={cls.nav__uzor}></div>
         </nav>
     );
 }

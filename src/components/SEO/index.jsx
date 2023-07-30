@@ -16,11 +16,11 @@ const SEO = (props) => {
             <title>{title || "Megamix"}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <link rel="apple-touch-icon" sizes="180x180" href="/faicon/apple-touch-icon.png" />
-            <link rel="icon" type="image/png" sizes="32x32" href="/faicon/favicon-32x32.png" />
-            <link rel="icon" type="image/png" sizes="16x16" href="/faicon/favicon-16x16.png" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="mask-icon" href="/faicon/safari-pinned-tab.svg" color="#6e99a6" />
+            <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#6e99a6" />
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="theme-color" content="#ffffff" />
 
