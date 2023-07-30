@@ -1,10 +1,12 @@
 import HomePage from "components/Pages/Home";
+import SEO from "components/SEO";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
   return (
     <>
-    <HomePage />
+      <SEO />
+      <HomePage />
     </>
   )
 }
