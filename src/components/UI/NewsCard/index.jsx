@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 import RoundedButton from '../Buttons/RoundedButton';
 import { Logo } from '../icons';
 import cls from './NewsCard.module.scss'
@@ -9,6 +10,8 @@ const NewsCard = ({
     image = '',
     title = ''
 }) => {
+    const { t } = useTranslation()
+
     return (
         <li className={cls.news}>
             <div className={cls.news__image}>
@@ -23,7 +26,7 @@ const NewsCard = ({
                 <Logo />
                 <h4 className={cls.news__title}>{title}</h4>
                 <Link href={link}>
-                    <RoundedButton className={cls.news__btn}>Подробнее</RoundedButton>
+                    <RoundedButton className={cls.news__btn}>{t('Подробнее')}</RoundedButton>
                 </Link>
             </div>
         </li>

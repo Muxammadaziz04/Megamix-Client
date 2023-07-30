@@ -47,7 +47,7 @@ const Navbar = () => {
                     <span></span>
                     <div
                         onClick={() => setIsOpenLngModal(state => !state)}
-                        style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px' }}
+                        style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px', cursor: "pointer" }}
                     >
                         <button>
                             <GlobusIcon />

@@ -1,10 +1,11 @@
 import Container from 'components/UI/Container';
 import { CoatingsIcon, DryMixesIcon, GlueIcon, PaintsIcon } from 'components/UI/icons';
-import { useEffect, useRef } from 'react';
+import { useTranslation } from 'next-i18next';
 import CategoryCard from '../CategoryCard';
 import cls from './Header.module.scss'
 
 const Header = () => {
+    const { t } = useTranslation()
 
     return (
         <header className={cls.header}>
@@ -17,8 +18,8 @@ const Header = () => {
             </video>
             <Container className={cls.header__container}>
                 <div className={cls.header__text}>
-                    <h2>Без сомнений...</h2>
-                    <p>Гарантия качества напротяжении всегосрока службы.</p>
+                    <h2>{t('Без сомнений...')}</h2>
+                    <p>{t('Гарантия качества на протяжении всего срока службы.')}</p>
                 </div>
                 <div className={cls.header__categories}>
                     <CategoryCard icon={<DryMixesIcon />} name='Сухие смеси' />

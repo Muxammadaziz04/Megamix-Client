@@ -1,23 +1,25 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslation } from 'next-i18next';
 import { Autoplay } from 'swiper/modules';
 import Container from 'components/UI/Container';
+import useWindowWidth from 'hooks/useWindowWidth';
 import { SliderLeftArrow, SliderRightArrow } from 'components/UI/icons';
 import NewsCard from 'components/UI/NewsCard';
 import cls from './News.module.scss'
 
 import 'swiper/css';
-import useWindowWidth from 'hooks/useWindowWidth';
 
 const News = () => {
-    const [swiper, setSwiper] = useState()
+    const { t } = useTranslation()
     const windowWidth = useWindowWidth()
+    const [swiper, setSwiper] = useState()
 
     return (
         <section className={cls.news}>
             <Container className={cls.news__container}>
                 <div className={cls.news__block}>
-                    <h3 className={cls.news__title}>Наши новости</h3>
+                    <h3 className={cls.news__title}>{t('Наши новости')}</h3>
                     <div className={cls.news__slider__btns}>
                         <button onClick={() => swiper?.slidePrev()}><SliderLeftArrow /></button>
                         <button onClick={() => swiper?.slideNext()}><SliderRightArrow /></button>

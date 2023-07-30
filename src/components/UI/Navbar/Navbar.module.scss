@@ -8,6 +8,7 @@
     z-index: 1000;
     top: 0;
     border-bottom: 1px solid rgba(43, 42, 41, 0.10);
+    overflow: hidden;
 
     &>div:first-child,
     &>div:nth-child(3) {

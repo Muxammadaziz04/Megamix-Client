@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import GrayButton from '../Buttons/GrayButton';
 import { PlayIcon } from '../icons';
 import cls from './ProductCard.module.scss'
@@ -11,13 +12,15 @@ const ProductCard = ({
     description = '',
     align = 'flex-start'
 }) => {
+    const { t } = useTranslation()
+
     return (
         <li>
             <Link href={link}>
                 <a className={cls.card}>
-                    <div className={cls.card__info} style={{alignSelf: align}}>
-                        <h3 style={{'textAlign': align}}>{title}</h3>
-                        <GrayButton><PlayIcon /> видео инструкция</GrayButton>
+                    <div className={cls.card__info} style={{ alignSelf: align }}>
+                        <h3 style={{ 'textAlign': align }}>{title}</h3>
+                        <GrayButton><PlayIcon /> {t('видео инструкция')}</GrayButton>
                     </div>
                     <div className={cls.card__image}>
                         <Image

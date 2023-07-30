@@ -9,7 +9,7 @@ const VideoGalleryPage = () => {
     return (
         <div className={cls.video}>
             <Container className={cls.video__container}>
-                <BreadCrumbs title='Фото галерея' breadCrumbs={breadCrumbs} />
+                <BreadCrumbs title='Видео галерея' breadCrumbs={breadCrumbs} />
                 <Categories categories={categories} />
                 <ul className={cls.video__list}>
                     <VideoCard />

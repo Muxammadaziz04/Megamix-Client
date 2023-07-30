@@ -1,13 +1,16 @@
 import Container from 'components/UI/Container';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 import cls from './Advantages.module.scss'
 import { advantages } from './data';
 
 const Advantages = () => {
+    const {t} = useTranslation()
+
     return (
         <section className={cls.advantage}>
             <Container className={cls.advantage__container}>
-                <h2 className={cls.advantage__title}>Наше преимущество</h2>
+                <h2 className={cls.advantage__title}>{t('Наше преимущество')}</h2>
                 <ul className={cls.advantage__list}>
                     {
                         advantages.map(adv => (
@@ -20,7 +23,7 @@ const Advantages = () => {
                                         alt='icon'
                                     />
                                 </div>
-                                {adv.title}
+                                {t(adv.title)}
                             </li>
                         ))
                     }
