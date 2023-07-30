@@ -1,16 +1,18 @@
 import useWindowWidth from "hooks/useWindowWidth";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "next-i18next";
 import Container from "../Container";
 import cls from './Partners.module.scss'
 
 const Partners = () => {
+    const {t} = useTranslation()
     const windowWidth = useWindowWidth()
 
     return (
-        <section className={cls.partners}>
+        <section className={cls.partners} id='partners'>
             <Container>
-                <h3 className={cls.partners__title}>Партнеры</h3>
+                <h3 className={cls.partners__title}>{t('Партнёры')}</h3>
             </Container>
             <Marquee
                 autoFill

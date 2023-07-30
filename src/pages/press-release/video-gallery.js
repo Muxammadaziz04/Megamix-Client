@@ -1,4 +1,5 @@
 import VideoGalleryPage from "components/Pages/VideoGallery";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const VideoGallery = () => {
     return (
@@ -9,3 +10,11 @@ const VideoGallery = () => {
 }
 
 export default VideoGallery;
+
+export async function getServerSideProps({ locale }) {
+    return {
+      props: {
+        ...(await serverSideTranslations(locale, ["common"])),
+      }
+    }
+  }

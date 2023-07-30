@@ -1,4 +1,18 @@
 {
-    "main": "main",
-    "lang": "Eng"
+    "lang": "Eng",
+    "Главная": "Home",
+    "Продукты": "Products",
+    "Пресс-релиз": "Press release",
+    "Сертификаты": "Certificates",
+    "Награды": "Awards",
+    "Контакты": "Contacts",
+    "Партнёры": "Partners",
+    "Copyright": "Copyright",
+    "Developed by": "Developed by" ,
+    "отправить": "send", 
+    "Обратная связь": "Feedback",
+    "Ваше имя": "Your name",
+    "Копировать": "Copy",
+    "Скопировано": "Copied",
+    "Республика Узбекистана, г. Ташкент, пр. Бунёдкор, 57Б": "Republic of Uzbekistan, Tashkent, Bunyodkor Ave., 57B"
 }

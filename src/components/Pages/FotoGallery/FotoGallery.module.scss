@@ -22,3 +22,24 @@
         }
     }
 }
+
+
+@media screen and (max-width: 740px) {
+    .foto{
+        &__list{
+            & > * {
+                max-width: calc((100% - 30px) / 2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .foto{
+        &__list{
+            & > * {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -27,7 +27,7 @@ const Navbar = () => {
                         navbarLinks?.map(link => (
                             <li key={link.id}>
                                 <Link href={link.link}>
-                                    <a>{link.label}</a>
+                                    <a>{t(link.label)}</a>
                                 </Link>
                             </li>
                         ))

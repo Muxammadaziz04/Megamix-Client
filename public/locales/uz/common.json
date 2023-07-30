@@ -1,4 +1,18 @@
 {
-    "main": "uz",
-    "lang": "Uz"
+    "lang": "Uz",
+    "Главная": "Asosiy",
+    "Продукты": "Mahsulotlar",
+    "Пресс-релиз": "Matbuot xabarlari",
+    "Сертификаты": "Sertifikatlar",
+    "Награды": "Mukofotlar",
+    "Контакты": "Kontaktlar",
+    "Партнёры": "Hamkorlar",
+    "Copyright": "Mualliflik huquqi",
+    "Developed by": "Ishlab chiqilgan" ,
+    "отправить": "yuborish", 
+    "Обратная связь": "Qayta aloqa",
+    "Ваше имя": "Ismingiz",
+    "Копировать": "Nusxalash",
+    "Скопировано": "Ko‘chirildi",
+    "Республика Узбекистана, г. Ташкент, пр. Бунёдкор, 57Б": "O‘zbekiston Respublikasi, Toshkent sh., Bunyodkor shoh ko‘chasi, 57B"
 }

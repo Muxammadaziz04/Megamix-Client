@@ -1,9 +1,9 @@
 export const navLinks = [
-    {
-        id: 1,
-        label: 'Каталог продукции',
-        link: '/products'
-    },
+    // {
+    //     id: 1,
+    //     label: 'Каталог продукции',
+    //     link: '/products'
+    // },
     {
         id: 2,
         label: 'Продукты',
@@ -21,7 +21,7 @@ export const navLinks = [
     },
     {
         id: 5,
-        label: 'Сертификат',
+        label: 'Сертификаты',
         link: '/sertificates'
     },
     {

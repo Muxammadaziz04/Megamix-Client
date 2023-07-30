@@ -8,9 +8,16 @@
     display: flex;
 
     & > div{
+        margin: 0 auto;
         width: 100%;
         max-width: 270px;
         aspect-ratio: 15/22;
         position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        padding: 25px;
     }
 }

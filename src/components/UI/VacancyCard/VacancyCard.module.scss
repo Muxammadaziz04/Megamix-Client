@@ -12,3 +12,22 @@
         line-height: 36px;
     }
 }
+
+@media screen and (max-width: 845px) {
+    .card{
+        padding: 30px;
+        & >*{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card{
+        padding: 20px;
+        & >*{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}

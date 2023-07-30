@@ -19,9 +19,11 @@
         padding-bottom: 37px;
 
         &>h2 {
+            position: relative;
             max-width: 270px;
             font-size: 16px;
             line-height: 21px;
+            z-index: 1000;
         }
 
         &::after {

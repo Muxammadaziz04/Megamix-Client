@@ -21,3 +21,13 @@
         }
     }
 }
+
+@media screen and (max-width: 680px) {
+    .video{
+        &__list{
+            & > *{
+                max-width: 100%;
+            }
+        }
+    }
+}

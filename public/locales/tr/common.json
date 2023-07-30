@@ -1,4 +1,18 @@
 {
-    "main": "Tr",
-    "lang": "Turk"
+    "lang": "Türk",
+    "Главная": "Ev",
+    "Продукты": "Ürünler",
+    "Пресс-релиз": "Basın bülteni",
+    "Сертификаты": "Sertifikalar",
+    "Награды": "Ödüller",
+    "Контакты": "Kişiler",
+    "Партнёры": "Ortaklar",
+    "Copyright": "Telif hakkı",
+    "Developed by": "Tarafından geliştirilmiş" ,
+    "отправить": "Göndermek", 
+    "Обратная связь": "Geri bildirim",
+    "Ваше имя": "Adınız",
+    "Копировать": "Kopyala",
+    "Скопировано": "Kopyalandı",
+    "Республика Узбекистана, г. Ташкент, пр. Бунёдкор, 57Б": "Özbekistan Cumhuriyeti, Taşkent, Bunyodkor Ave., 57B"
 }
