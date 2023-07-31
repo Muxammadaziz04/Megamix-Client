@@ -7,7 +7,7 @@ const Categories = ({
     categories = []
 }) => {
     const router = useRouter()
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     return (
         <ul className={cls.categories}>

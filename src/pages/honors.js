@@ -1,20 +1,25 @@
 import HonorsPage from "components/Pages/Honors";
+import SEO from "components/SEO";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const Honors = () => {
-    return (
-        <>
-            <HonorsPage />
-        </>
-    );
+  const { t } = useTranslation()
+
+  return (
+    <>
+      <SEO title={`Megamix | ${t('Награды')}`} />
+      <HonorsPage />
+    </>
+  );
 }
 
 export default Honors;
 
 export async function getServerSideProps({ locale }) {
-    return {
-      props: {
-        ...(await serverSideTranslations(locale, ["common"])),
-      }
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
     }
   }
+}
