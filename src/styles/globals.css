@@ -91,6 +91,10 @@ input::-webkit-inner-spin-button {
   background-color: #2B2A29 !important;
 }
 
+#home__slider .swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
 .ant-pagination {
   display: flex !important;
   align-items: stretch !important;
@@ -114,13 +118,16 @@ left: -30% !important;
   justify-content: center;
   width: 63px !important;
   border-radius: 0 !important;
-  padding: 15px 20px !important;
   height: auto !important;
   font-family: 'Core Sans A' !important;
   font-size: 15px !important;
   border: 1px solid #EAE8E6;
   background: #FFF !important;
   aspect-ratio: 1/1;
+}
+
+.ant-pagination > li > a{
+  padding: 15px 20px !important;
 }
 
 .ant-pagination-prev:hover > button,

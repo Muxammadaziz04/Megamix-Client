@@ -5,8 +5,20 @@ import { useTranslation } from "next-i18next";
 import Container from "../Container";
 import cls from './Partners.module.scss'
 
+const partners = [
+    '/partners/henkel.png',
+    '/partners/shinetsu.jpg',
+    '/partners/dow.png',
+    '/partners/tronox.png',
+    '/partners/fabbrigroup.png', 
+    '/partners/sika.png',
+    '/partners/hercules.png', 
+    '/partners/esen.png', 
+    '/partners/bafs.webp'
+]
+
 const Partners = () => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     const windowWidth = useWindowWidth()
 
     return (
@@ -18,26 +30,20 @@ const Partners = () => {
                 autoFill
                 gradient={windowWidth > 768}
             >
-                <div className={cls.partners__image}>
-                    <div>
-                        <Image
-                            src={'/images/partner.png'}
-                            layout="fill"
-                            objectFit="contain"
-                            alt="Megamix partner"
-                        />
-                    </div>
-                </div>
-                <div className={cls.partners__image}>
-                    <div>
-                        <Image
-                            src={'/images/partner2.png'}
-                            layout="fill"
-                            objectFit="contain"
-                            alt="Megamix partner"
-                        />
-                    </div>
-                </div>
+                {
+                    partners?.length > 0 && partners?.map((partner, index) => (
+                        <div className={cls.partners__image} key={index}>
+                            <div>
+                                <Image
+                                    src={partner}
+                                    layout="fill"
+                                    objectFit="contain"
+                                    alt="Megamix partner"
+                                />
+                            </div>
+                        </div>
+                    ))
+                }
             </Marquee>
         </section>
     );

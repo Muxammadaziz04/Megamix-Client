@@ -4,6 +4,7 @@ const Input = ({
     type = 'text',
     placeholder = '',
     className = '',
+    register = {},
     ...other
 }) => {
     return (
@@ -11,6 +12,7 @@ const Input = ({
             className={`${cls.input} ${className}`}
             type={type}
             placeholder={placeholder}
+            {...register}
             {...other}
         />
     );

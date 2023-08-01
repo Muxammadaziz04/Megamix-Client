@@ -4,9 +4,14 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import cls from './Carousel.module.scss'
 
+const sliders = [
+    '/sliders/1.png',
+    '/sliders/2.png',
+]
+
 const Carousel = () => {
     return (
-        <section>
+        <section id='home__slider' className={cls?.slider__wrapper}>
             <Container>
                 <Swiper
                     speed={600}
@@ -16,32 +21,23 @@ const Carousel = () => {
                     slidesPerView={1}
                     pagination={true}
                 >
-                    <SwiperSlide>
-                        <div style={{ position: 'relative' }}>
-                            {/* <h3 className={cls.carousel__title}>Разные полезные ссылки</h3> */}
-                            <div className={cls.carousel}>
-                                <Image
-                                    src={'/images/slider.jpg'}
-                                    layout="fill"
-                                    objectFit='cover'
-                                    alt='image'
-                                />
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div style={{ position: 'relative' }}>
-                            {/* <h3 className={cls.carousel__title}>Разные полезные ссылки</h3> */}
-                            <div className={cls.carousel}>
-                                <Image
-                                    src={'/images/slider.jpg'}
-                                    layout="fill"
-                                    objectFit='cover'
-                                    alt='image'
-                                />
-                            </div>
-                        </div>
-                    </SwiperSlide>
+                    {
+                        sliders?.length && sliders.map((slider, index) => (
+                            <SwiperSlide key={index}>
+                                <div style={{ position: 'relative' }}>
+                                    <div className={cls.carousel}>
+                                        <Image
+                                            priority
+                                            src={slider}
+                                            layout="fill"
+                                            objectFit='cover'
+                                            alt='image'
+                                        />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    }
                 </Swiper>
             </Container>
         </section>

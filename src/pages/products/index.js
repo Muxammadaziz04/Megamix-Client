@@ -24,7 +24,7 @@ export async function getServerSideProps({ locale, query }) {
       redirect: {
         replace: true,
         permanent: false,
-        destination: `/products?id=${categories?.[0]?.id}`
+        destination: `${locale !== 'ru' ? `/${locale}` : ''}/products?id=${categories?.[0]?.id}`
       }
     }
   }

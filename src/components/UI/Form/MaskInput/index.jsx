@@ -8,7 +8,7 @@ const MaskInput = ({
     name = '',
     rules,
     control,
-    type = 'tel'
+    type = 'tel',
 }) => {
     return control ? (
         <Controller

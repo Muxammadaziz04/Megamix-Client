@@ -1,5 +1,5 @@
 import Container from 'components/UI/Container';
-import { CoatingsIcon, DryMixesIcon, GlueIcon, PaintsIcon } from 'components/UI/icons';
+import { CoatingsIcon, DryMixesIcon, GiftIcon, GlueIcon, PaintsIcon } from 'components/UI/icons';
 import { useTranslation } from 'next-i18next';
 import CategoryCard from '../CategoryCard';
 import cls from './Header.module.scss'
@@ -38,10 +38,15 @@ const Header = ({ categories = [] }) => {
                                 key={ctg.id} 
                                 icon={getIconFromCtgId(ctg.id)} 
                                 name={ctg.name} 
+                                link={`/products?id=${ctg.id}`}
                             />
                         ))
                     }
-                    {/* <CategoryCard icon={<PaintsIcon />} name='Краски' />*/}
+                    <CategoryCard 
+                        icon={<GiftIcon />} 
+                        name={t('Клуб мастеров')} 
+                        link='/masters-club'
+                    />
                 </div>
             </Container>
         </header>

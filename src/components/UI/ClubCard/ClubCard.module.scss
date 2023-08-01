@@ -1,0 +1,34 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+
+    &__title {
+        padding: 22px;
+        padding-top: 40px;
+        border-bottom: 1px solid #EAE8E6;
+
+        &>h4 {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        position: relative;
+        aspect-ratio: 563/312;
+    }
+
+    &__desc{
+        padding: 22px;
+        padding-bottom: 40px;
+        border-top: 1px solid #EAE8E6;
+
+        & > p{
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+}
