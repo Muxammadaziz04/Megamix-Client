@@ -72,7 +72,7 @@ const Navbar = () => {
                     <span className="hamburger-inner"></span>
                 </span>
             </button>
-            <div>
+            <div style={{flexGrow: 1}}>
                 <div style={{width: '138px'}}></div>
             </div>
             <div className={cls.nav__uzor}></div>
