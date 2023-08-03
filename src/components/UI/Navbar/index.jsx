@@ -41,7 +41,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className={cls.nav__group}>
-                    <input
+                    {/* <input
                         ref={inputRef}
                         type="text"
                         className={cls.nav__group__input}
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <button onClick={(e) => router.push(`/products?s=${inputRef.current.value.trim()}`)}>
                         <SearchIcon />
                     </button>
-                    <span></span>
+                    <span></span> */}
                     <div
                         onClick={() => setIsOpenLngModal(state => !state)}
                         style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px', cursor: "pointer" }}
