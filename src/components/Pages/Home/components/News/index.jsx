@@ -46,6 +46,7 @@ const News = ({ news = [] }) => {
                             <NewsCard
                                 image={news?.image}
                                 title={news?.description}
+                                link={`/press-release/news/${news?.id}`}
                             />
                         </SwiperSlide>
                     ))

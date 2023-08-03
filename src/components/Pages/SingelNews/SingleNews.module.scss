@@ -14,7 +14,24 @@
         color: rgba(43, 42, 41, 0.6);
     }
 
-    &__body{
+    &__body {
         padding: 45px 0;
+
+        &__container {
+            max-width: 760px;
+        }
+
+        &__image {
+            max-width: 100%;
+            width: 100%;
+            aspect-ratio: 76/45;
+            position: relative;
+        }
+
+        &__desc {
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 }
