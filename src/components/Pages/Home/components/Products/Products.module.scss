@@ -23,6 +23,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        align-items: stretch;
         margin-bottom: 73px;
 
         &>* {
