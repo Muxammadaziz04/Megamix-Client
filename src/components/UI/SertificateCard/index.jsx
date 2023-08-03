@@ -1,14 +1,17 @@
 import Image from 'next/image';
 import cls from './SertificateCard.module.scss'
 
-const SertificateCard = () => {
+const SertificateCard = ({
+    image = '',
+    objectFit = 'cover'
+}) => {
     return (
         <li className={cls.card}>
             <div>
                 <Image
-                    src='/images/sertificate.png'
+                    src={image}
                     layout='fill'
-                    objectFit='cover'
+                    objectFit={objectFit}
                     alt='sertificate'
                 />
             </div>

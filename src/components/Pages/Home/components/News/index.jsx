@@ -40,24 +40,16 @@ const News = ({ news = [] }) => {
                 slidesPerView={windowWidth > 560 ? 1.65 : 1.1}
                 onInit={setSwiper}
             >
-                <SwiperSlide>
-                    <NewsCard
-                        image='/images/news.png'
-                        title='Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator. Giving information on its origins, as well as a random Lipsum generator.'
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <NewsCard
-                        image='/images/news.png'
-                        title='Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator. Giving information on its origins, as well as a random Lipsum generator.'
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <NewsCard
-                        image='/images/news.png'
-                        title='Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator. Giving information on its origins, as well as a random Lipsum generator.'
-                    />
-                </SwiperSlide>
+                {
+                    news?.length > 0 && news?.map(news => (
+                        <SwiperSlide key={news?.id}>
+                            <NewsCard
+                                image={news?.image}
+                                title={news?.description}
+                            />
+                        </SwiperSlide>
+                    ))
+                }
             </Swiper>
         </section>
     );
