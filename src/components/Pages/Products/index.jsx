@@ -8,7 +8,11 @@ import ProductCard from 'components/UI/ProductCard';
 import { breadCrumbs } from './data';
 import cls from './Products.module.scss'
 
-const ProductsPage = ({ categories = [] }) => {
+const ProductsPage = ({ 
+    categories = [], 
+    products = [], 
+    productsCount = 0 
+}) => {
     const router = useRouter()
 
     const itemRender = (current, type, originalElement) => {
@@ -38,15 +42,21 @@ const ProductsPage = ({ categories = [] }) => {
                 <BreadCrumbs title='Продукты' breadCrumbs={breadCrumbs} />
                 <Categories categories={categories?.map(ctg => ({ label: ctg.name, link: `/products?id=${ctg.id}` }))} />
                 <ul className={cls.products__list}>
-                    <ProductCard link='/products/d' title='Granit' image='/images/product.png' description='Клей облицовочный для печей и каминов' align='center' />
-                    <ProductCard link='/products/d' title='Granit' image='/images/product.png' description='Клей облицовочный для печей и каминов' align='center' />
-                    <ProductCard link='/products/d' title='Granit' image='/images/product.png' description='Клей облицовочный для печей и каминов' align='center' />
-                    <ProductCard link='/products/d' title='Granit' image='/images/product.png' description='Клей облицовочный для печей и каминов' align='center' />
-                    <ProductCard link='/products/d' title='Granit' image='/images/product.png' description='Клей облицовочный для печей и каминов' align='center' />
-                    <ProductCard link='/products/d' title='Granit' image='/images/product.png' description='Клей облицовочный для печей и каминов' align='center' />
+                    {
+                        products?.length > 0 && products?.map(prd => (
+                            <ProductCard 
+                                key={prd?.id}
+                                link={`/products/${prd?.id}`} 
+                                title={prd?.title}
+                                image={prd?.foto} 
+                                description={prd?.shortDescription}
+                                align='center'   
+                            />
+                        ))
+                    }
                 </ul>
                 <Pagination
-                    total={50}
+                    total={productsCount}
                     pageSize={6}
                     current={Number(router?.query?.page) || 1}
                     itemRender={itemRender}
