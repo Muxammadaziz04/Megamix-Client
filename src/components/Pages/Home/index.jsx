@@ -8,13 +8,13 @@ import Products from "./components/Products";
 import Sertificates from "./components/Sertificates";
 
 
-const HomePage = ({ categories = [] }) => {
+const HomePage = ({ categories = [], news = [] }) => {
     return (
         <>
             <Header categories={categories} />
             <Advantages />
             <Products />
-            <News />
+            <News news={news} />
             <AboutCompany />
             <Sertificates />
             <Journal />

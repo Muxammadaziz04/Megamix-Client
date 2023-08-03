@@ -12,7 +12,13 @@ const Products = () => {
     return (
         <section className={cls.products}>
             <Container className={cls.products__container}>
-                <h2 className={cls.products__title}>{t('Продукты')} <RightArrowIcon /></h2>
+                <h2 className={cls.products__title}>
+                    <Link href='/products'>
+                        <a>
+                            {t('Продукты')} <RightArrowIcon />
+                        </a>
+                    </Link>
+                </h2>
                 <ul className={cls.products__list}>
                     {
                         Array(6).fill(null).map((_, index) => (

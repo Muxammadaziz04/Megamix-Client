@@ -1,0 +1,21 @@
+.about {
+    padding: 60px 15px;
+    display: flex;
+    flex-direction: column;
+
+    &>h2 {
+        max-width: 858px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 109%;
+        margin: 60px auto 0 auto;
+    }
+
+    &>p {
+        max-width: 858px;
+        font-size: 18px;
+        line-height: 144%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}

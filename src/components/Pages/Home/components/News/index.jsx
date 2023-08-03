@@ -7,10 +7,10 @@ import useWindowWidth from 'hooks/useWindowWidth';
 import { SliderLeftArrow, SliderRightArrow } from 'components/UI/icons';
 import NewsCard from 'components/UI/NewsCard';
 import cls from './News.module.scss'
-
 import 'swiper/css';
+import Link from 'next/link';
 
-const News = () => {
+const News = ({ news = [] }) => {
     const { t } = useTranslation()
     const windowWidth = useWindowWidth()
     const [swiper, setSwiper] = useState()
@@ -19,7 +19,13 @@ const News = () => {
         <section className={cls.news}>
             <Container className={cls.news__container}>
                 <div className={cls.news__block}>
-                    <h3 className={cls.news__title}>{t('Наши новости')}</h3>
+                    <h2 className={cls.news__title}>
+                        <Link href='/press-release/news'>
+                            <a>
+                                {t('Наши новости')}
+                            </a>
+                        </Link>
+                    </h2>
                     <div className={cls.news__slider__btns}>
                         <button onClick={() => swiper?.slidePrev()}><SliderLeftArrow /></button>
                         <button onClick={() => swiper?.slideNext()}><SliderRightArrow /></button>

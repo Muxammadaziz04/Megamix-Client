@@ -1,13 +1,12 @@
+import Link from 'next/link';
 import { Pagination } from 'antd';
+import { useRouter } from 'next/router';
 import BreadCrumbs from 'components/UI/BreadCrumbs';
 import Categories from 'components/UI/Categories';
 import Container from 'components/UI/Container';
 import ProductCard from 'components/UI/ProductCard';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { breadCrumbs } from './data';
 import cls from './Products.module.scss'
-
 
 const ProductsPage = ({ categories = [] }) => {
     const router = useRouter()
@@ -28,10 +27,10 @@ const ProductsPage = ({ categories = [] }) => {
         } else {
             return (
                 <Link href={`?id=${router?.query?.id}&page=${current}`}>
-                <a>{current}</a>
-            </Link>
-        )
-    }
+                    <a>{current}</a>
+                </Link>
+            )
+        }
     }
     return (
         <div className={cls.products}>

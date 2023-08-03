@@ -1,13 +1,16 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import Container from '../Container';
 import { GlobusIcon, Logo, SearchIcon } from '../icons';
 import LanguageModal from '../LanguageModal';
 import { navbarLinks } from './data';
 import cls from './Navbar.module.scss'
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+    const inputRef = useRef()
+    const router = useRouter()
     const { t } = useTranslation(['common'])
     const [isOpenBurger, setIsOpenBurger] = useState(null)
     const [isOpenLngModal, setIsOpenLngModal] = useState(false)
@@ -39,12 +42,14 @@ const Navbar = () => {
 
                 <div className={cls.nav__group}>
                     <input
-                        className={cls.nav__group__input}
+                        ref={inputRef}
                         type="text"
+                        className={cls.nav__group__input}
                         placeholder='поиск'
                         onBlur={e => e.target.classList.add(cls.onBlurInput)}
+                        onKeyUp={(e) => e.key === "Enter" && router.push(`/products?s=${e.target.value.trim()}`)}
                     />
-                    <button>
+                    <button onClick={(e) => router.push(`/products?s=${inputRef.current.value.trim()}`)}>
                         <SearchIcon />
                     </button>
                     <span></span>

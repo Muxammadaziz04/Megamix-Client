@@ -20,11 +20,13 @@ export default Products;
 export async function getServerSideProps({ locale, query }) {
   const categories = await getCategories({ lang: locale })
   if(!categories?.find(ctg => ctg.id === query?.id)) {
+    const params = new URLSearchParams({...query, id: categories?.[0]?.id})
+
     return {
       redirect: {
         replace: true,
         permanent: false,
-        destination: `${locale !== 'ru' ? `/${locale}` : ''}/products?id=${categories?.[0]?.id}`
+        destination: `${locale !== 'ru' ? `/${locale}` : ''}/products?${params.toString()}`
       }
     }
   }
