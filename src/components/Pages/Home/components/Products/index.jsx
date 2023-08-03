@@ -6,7 +6,9 @@ import ProductCard from 'components/UI/ProductCard';
 import { useTranslation } from 'next-i18next';
 import cls from './Products.module.scss'
 
-const Products = () => {
+const Products = ({
+  products = [],
+}) => {
     const { t } = useTranslation()
 
     return (
@@ -21,11 +23,12 @@ const Products = () => {
                 </h2>
                 <ul className={cls.products__list}>
                     {
-                        Array(6).fill(null).map((_, index) => (
+                        products?.length > 0 && products.map((prd) => (
                             <ProductCard
-                                key={index}
-                                title='Granit'
-                                image='/images/product.png'
+                                key={prd?.id}
+                                title={prd?.title}
+                                image={prd?.foto}
+                                description={prd?.shortDescription}
                             />
                         ))
                     }

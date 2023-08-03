@@ -7,13 +7,17 @@ import News from "./components/News";
 import Products from "./components/Products";
 import Sertificates from "./components/Sertificates";
 
+const HomePage = ({
+    categories = [],
+    news = [],
+    products = [],
+}) => {
 
-const HomePage = ({ categories = [], news = [] }) => {
     return (
         <>
             <Header categories={categories} />
             <Advantages />
-            <Products />
+            <Products products={products} />
             <News news={news} />
             <AboutCompany />
             <Sertificates />
