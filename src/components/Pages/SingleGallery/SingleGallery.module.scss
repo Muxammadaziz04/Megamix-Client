@@ -32,3 +32,23 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .gallery{
+        &__list{
+            & > li{
+                max-width: calc((100% - 2px) / 3);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .gallery{
+        &__list{
+            & > li{
+                max-width: calc((100% - 1px) / 2);
+            }
+        }
+    }
+}

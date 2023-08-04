@@ -1,12 +1,27 @@
+import Image from 'next/image';
 import BreadCrumbs from 'components/UI/BreadCrumbs';
 import Container from 'components/UI/Container';
-import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'next-i18next';
 import { breadCrumbs } from './data';
 import cls from './SingleProduct.module.scss'
 
-const SingleProductPage = () => {
+const SingleProductPage = ({
+    image = '',
+    title = '',
+    weight = '',
+    description = '',
+    technicalSpecifications = '',
+    packaging = ''
+}) => {
+    const ref = useRef()
+    const {t} = useTranslation()
     const [activeTab, setActiveTab] = useState(1)
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(ref?.current?.offsetWidth)
+    }, [ref.current])
 
     function resizeInput(e) {
         e.target.style.width = (e.target.value?.length + 2) + "ch";
@@ -15,67 +30,73 @@ const SingleProductPage = () => {
     return (
         <div className={cls.product}>
             <Container className={cls.product__container}>
-                <BreadCrumbs title='Mono Stop' breadCrumbs={breadCrumbs} />
+                <BreadCrumbs title={title} breadCrumbs={[...breadCrumbs, { label: title }]} />
                 <div className={cls.product__info}>
                     <div>
                         <div className={cls.product__info__block}>
                             <div>
                                 <div className={cls.product__info__block__img}>
                                     <Image
-                                        src='/images/product.png'
+                                        src={image}
                                         layout='fill'
                                         objectFit='contain'
-                                        alt='Mono Stop'
+                                        alt={title}
                                     />
                                 </div>
                             </div>
                             <div className={cls.product__info__block__calc}>
                                 <div className={cls.product__info__block__calc__result}>
-                                    <span>6 кг</span>
-                                    <span>3 литр вода</span>
+                                    <span>6 kg</span>
+                                    <span>3 {t('литра воды')}</span>
                                 </div>
                                 <div className={cls.product__info__block__calc__inputs}>
                                     <div>
                                         <div>
-                                            Слой
+                                            {t('Слой')}
                                             <label>
-                                                <input 
-                                                    type="number" 
-                                                    defaultValue={0} 
-                                                    onChange={resizeInput} 
+                                                <input
+                                                    type="number"
+                                                    defaultValue={0}
+                                                    onChange={resizeInput}
                                                     onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
                                                 />
-                                                см
+                                                sm
                                             </label>
                                         </div>
                                         <div>
-                                            Объём
+                                            {t('Объём')}
                                             <label>
-                                                <input 
-                                                    type="text" 
+                                                <input
+                                                    type="text"
                                                     defaultValue={0}
-                                                    onChange={resizeInput} 
+                                                    onChange={resizeInput}
                                                     onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
                                                 />
-                                                кв²
+                                                kv²
                                             </label>
                                         </div>
                                     </div>
-                                    <span>Вы можете изменить цифры</span>
+                                    <span>{t('Вы можете изменить цифры')}</span>
                                 </div>
                             </div>
                         </div>
                         <video src="/video.mp4" controls></video>
                     </div>
                     <div className={cls.product__info__desc}>
-                        <h1>Mono Stop</h1>
-                        <span>25 кг</span>
+                        <h1>{title}</h1>
+                        <span>{weight}</span>
                         <ul>
-                            <li className={activeTab === 1 ? cls.active : ''} onClick={() => setActiveTab(1)}>Опиания</li>
-                            <li className={activeTab === 2 ? cls.active : ''} onClick={() => setActiveTab(2)}>Технические характеристики</li> 
-                            <li className={activeTab === 3 ? cls.active : ''} onClick={() => setActiveTab(3)}>Упаковка</li>
+                            <li className={activeTab === 1 ? cls.active : ''} onClick={() => setActiveTab(1)}>{t('Описание')}</li>
+                            <li className={activeTab === 2 ? cls.active : ''} onClick={() => setActiveTab(2)}>{t('Технические характеристики')}</li>
+                            <li className={activeTab === 3 ? cls.active : ''} onClick={() => setActiveTab(3)}>{t('Упаковка')}</li>
                         </ul>
-                        <p>Гидроизоляционная сухая смесь, изготавливается на цементном вяжущем с различными добавками, применяется на поверхность бетона, монолитного бетона и других покрытий стен, полов. Используется в качестве водонепроницаемого слоя на стяжку, штукатурку, в наружных стенах подвального помещения, в подпорных стенах, резервуарах для воды, в помещениях с влажным режимом . Можно наносить в несколько слоев (один слой не более 3 мм). Обеспечивает легкое и быстрое применение, не создает усадок и трещин.</p>
+                        <div ref={ref}>
+                            <div style={{ left: `-${(activeTab - 1) * width}px` }}>
+                                <p style={{maxWidth: `${width}px`}}>{description}</p>
+                                <p style={{maxWidth: `${width}px`}}>{technicalSpecifications}</p>
+                                <p style={{maxWidth: `${width}px`}}>{packaging}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Container>

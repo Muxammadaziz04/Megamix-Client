@@ -40,5 +40,12 @@
     "заполните это поле": "ushbu maydonni to'ldiring",
     "Отправляем...": "Yuborilmoqda...",
     "Ваша заявка принята": "Sizning arizangiz qabul qilindi",
-    "Что-то пошло не так": "Nimadir noto'g'ri bajarildi"
+    "Что-то пошло не так": "Nimadir noto'g'ri bajarildi",
+    "Слой": "Qatlam",
+    "Объём": "Hajm",
+    "Вы можете изменить цифры": "Siz raqamlarni o'zgartirishingiz mumkin",
+    "Описание": "Tavsif",
+    "Технические характеристики": "Texnik xususiyatlari",
+    "Упаковка": "Paket",
+    "литра воды": "litr suv"
 }

@@ -25,6 +25,7 @@ const Products = ({
                     {
                         products?.length > 0 && products.map((prd) => (
                             <ProductCard
+                                link={`/products/${prd?.id}`}
                                 key={prd?.id}
                                 title={prd?.title}
                                 image={prd?.foto}

@@ -7,9 +7,8 @@ import Container from 'components/UI/Container';
 import { breadCrumbs, categories } from './data';
 import cls from './SingleGallery.module.scss'
 
-const images = Array(14).fill('/images/gallery.png')
 
-const SingleGalleryPage = () => {
+const SingleGalleryPage = ({ title = '', images = [] }) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
 
@@ -28,10 +27,10 @@ const SingleGalleryPage = () => {
             <Container className={cls.gallery__container}>
                 <BreadCrumbs title='Фото галерея' breadCrumbs={breadCrumbs} />
                 <Categories categories={categories} />
-                <h1 className={cls.gallery__title}>MEGAMIX на 5-й международной выставке строительства и мебели BuildExpo Uzbekistan 2010</h1>
+                <h1 className={cls.gallery__title}>{title}</h1>
                 <ul className={cls.gallery__list}>
                     {
-                        images.map((img, index) => (
+                        images?.length > 0 && images.map((img, index) => (
                             <li key={index} onClick={() => openImageViewer(index)}>
                                 <Image
                                     src={img}

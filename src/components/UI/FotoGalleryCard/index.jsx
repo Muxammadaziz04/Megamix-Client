@@ -2,21 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import cls from './FotoGalleryCard.module.scss'
 
-const FotoGallery = () => {
+const FotoGallery = ({
+    link = '/',
+    title = '',
+    image = ''
+}) => {
     return (
         <li className={cls.card}>
-            <Link href='/'>
+            <Link href={link}>
                 <a>
                     <div className={cls.card__image}>
                         <Image
-                            src='/images/foto-gallery.png'
+                            src={image}
                             layout="fill"
                             objectFit="cover"
-                            alt="Megamix foto gallery"
+                            alt={title}
                         />
                     </div>
                     <div className={cls.card__desc}>
-                        <h2>MEGAMIX на 5-й международной выставке строительства и мебели BuildExpo Uzbekistan 2010</h2>
+                        <h2>{title}</h2>
                     </div>
                 </a>
             </Link>

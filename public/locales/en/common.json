@@ -40,5 +40,12 @@
     "заполните это поле": "fill in this field",
     "Отправляем...": "Sending...",
     "Ваша заявка принята": "Your application is accepted",
-    "Что-то пошло не так": "Something went wrong"
+    "Что-то пошло не так": "Something went wrong",
+    "Слой": "Layer",
+    "Объём": "Weight",
+    "Вы можете изменить цифры": "You can change the numbers",
+    "Описание": "Description",
+    "Технические характеристики": "Specifications",
+    "Упаковка": "Package",
+    "литра воды": "liters of water"
 }

@@ -6,8 +6,5 @@ export const breadCrumbs = [
     {
         link: '/products',
         label: 'Продукты'
-    },
-    {
-        label: 'Mono Stop'
-    },
+    }
 ]
