@@ -14,10 +14,12 @@
         padding-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
+        align-items: stretch;
         gap: 55px;
 
         & > *{
             max-width: calc((100% - 55px) / 2);
+            justify-content: space-between;
         }
     }
 }

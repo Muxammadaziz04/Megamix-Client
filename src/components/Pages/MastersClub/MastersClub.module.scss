@@ -14,3 +14,13 @@
         }
     }
 }
+
+@media screen and (max-width: 530px) {
+    .body{
+        &__container{
+            & > *{
+                max-width: 100%;
+            }
+        }
+    }
+}
