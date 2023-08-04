@@ -5,6 +5,11 @@ export const navbarLinks = [
         link: '/'
     },
     {
+        id: 11,
+        label: 'О Компании',
+        link: '/company/about'
+    },
+    {
         id: 2,
         label: 'Продукты',
         link: '/products'
