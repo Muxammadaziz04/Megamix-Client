@@ -18,6 +18,7 @@ const SingleProduct = ({product = {}}) => {
         description={product?.description}
         technicalSpecifications={product?.technicalSpecifications}
         packaging={product?.packaging}
+        video={product?.video}
       />
     </>
   );

@@ -12,7 +12,8 @@ const SingleProductPage = ({
     weight = '',
     description = '',
     technicalSpecifications = '',
-    packaging = ''
+    packaging = '',
+    video = ''
 }) => {
     const ref = useRef()
     const {t} = useTranslation()
@@ -80,7 +81,7 @@ const SingleProductPage = ({
                                 </div>
                             </div>
                         </div>
-                        <video src="/video.mp4" controls></video>
+                        {video ? <video src="/video.mp4" controls></video> : <img src='/images/empty_video.png' />}
                     </div>
                     <div className={cls.product__info__desc}>
                         <h1>{title}</h1>
