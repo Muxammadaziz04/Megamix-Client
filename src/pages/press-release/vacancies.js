@@ -2,14 +2,15 @@ import VacanciesPage from "components/Pages/Vacancies";
 import SEO from "components/SEO";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { getVacancies } from "services/vacancy";
 
-const Vacancies = () => {
+const Vacancies = ({vacancies = []}) => {
   const { t } = useTranslation()
 
   return (
     <>
       <SEO title={`Megamix | ${t('Вакансии')}`} />
-      <VacanciesPage />
+      <VacanciesPage vacancies={vacancies} />
     </>
   );
 }
@@ -17,9 +18,12 @@ const Vacancies = () => {
 export default Vacancies;
 
 export async function getServerSideProps({ locale }) {
+  const vacancies = await getVacancies({ lang: locale })
+
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
+      vacancies
     }
   }
 }

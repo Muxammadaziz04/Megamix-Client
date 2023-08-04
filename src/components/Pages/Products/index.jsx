@@ -50,6 +50,7 @@ const ProductsPage = ({
                                 title={prd?.title}
                                 image={prd?.foto} 
                                 description={prd?.shortDescription}
+                                video={!!prd?.video}
                                 align='center'   
                             />
                         ))

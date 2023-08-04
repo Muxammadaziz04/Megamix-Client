@@ -10,7 +10,8 @@ const ProductCard = ({
     image = '',
     link = '/',
     description = '',
-    align = 'flex-start'
+    align = 'flex-start',
+    video = false
 }) => {
     const { t } = useTranslation()
 
@@ -20,7 +21,7 @@ const ProductCard = ({
                 <a className={cls.card}>
                     <div className={cls.card__info} style={{ alignSelf: align }}>
                         <h3 style={{ 'textAlign': align }}>{title}</h3>
-                        <GrayButton><PlayIcon /> {t('видео инструкция')}</GrayButton>
+                        {video && <GrayButton><PlayIcon /> {t('видео инструкция')}</GrayButton>}
                     </div>
                     <div className={cls.card__image}>
                         <Image
