@@ -10,6 +10,7 @@ const MastersClubPage = ({club = []}) => {
                 {
                     club?.length > 0 && club.map(club => (
                         <ClubCard 
+                            key={club.id}
                             link={`/masters-club/${club.id}`} 
                             title={club.title} 
                             desc={club?.shortDescription}
