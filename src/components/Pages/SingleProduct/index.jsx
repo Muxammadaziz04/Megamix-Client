@@ -23,10 +23,10 @@ const SingleProductPage = ({
     const ref = useRef()
     const volumeRef = useRef()
     const widthRef = useRef()
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     const [width, setWidth] = useState(0)
     const [activeTab, setActiveTab] = useState(1)
-    const [result, setResult] = useState({weight: calcWeight, water: calcWaterQuantity})
+    const [result, setResult] = useState({ weight: calcWeight, water: calcWaterQuantity })
 
     useEffect(() => {
         setWidth(ref?.current?.offsetWidth)
@@ -40,7 +40,7 @@ const SingleProductPage = ({
         const width = widthRef.current?.value || 0
         const volume = volumeRef.current?.value || 0
         const dest = (width / calcLayerWidth) * (volume / calcVolume)
-        setResult({weight: (calcWeight * dest) || 0, water:(calcWaterQuantity * dest) || 0})
+        setResult({ weight: (calcWeight * dest).toFixed(1) || 0, water: (calcWaterQuantity * dest).toFixed(1) || 0 })
     }
 
     return (
@@ -112,9 +112,9 @@ const SingleProductPage = ({
                         </ul>
                         <div ref={ref}>
                             <div style={{ left: `-${(activeTab - 1) * width}px` }}>
-                                <p style={{maxWidth: `${width}px`}}>{description}</p>
-                                <p style={{maxWidth: `${width}px`}}>{technicalSpecifications}</p>
-                                <p style={{maxWidth: `${width}px`}}>{packaging}</p>
+                                <p style={{ maxWidth: `${width}px` }}>{description}</p>
+                                <p style={{ maxWidth: `${width}px` }}>{technicalSpecifications}</p>
+                                <p style={{ maxWidth: `${width}px` }}>{packaging}</p>
                             </div>
                         </div>
                     </div>

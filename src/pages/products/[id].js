@@ -33,7 +33,7 @@ export default SingleProduct;
 
 export async function getServerSideProps({ locale, params }) {
   const product = await getProductsById(params?.id, {lang: locale })
-  console.log(product);
+
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
