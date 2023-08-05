@@ -86,7 +86,7 @@ const SingleProductPage = ({
                                             <label>
                                                 <input
                                                     ref={volumeRef}
-                                                    type="text"
+                                                    type="number"
                                                     defaultValue={calcVolume}
                                                     onChange={resizeInput}
                                                     onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
