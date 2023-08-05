@@ -3,6 +3,7 @@ import JournalCard from 'components/UI/JournalCard';
 import Container from 'components/UI/Container';
 import cls from './Journal.module.scss'
 import Link from 'next/link';
+import journals from 'constants/journals.constants';
 
 const Journal = () => {
     const { t } = useTranslation()
@@ -17,7 +18,15 @@ const Journal = () => {
                         </a>
                     </Link>
                 </h2>
-                <JournalCard image={'/images/journal.png'} descriptions={Array(2).fill({ title: 'Темы журнала с короткой описанием', desc: 'На протяжении своей деятельности более чем 10 лет «MEGAMIX» накопил богатейший опыт работы в сфере производства строительно-отделочных материалов, и сегодня список ассортимента достиг свыше 40 наименований готовой продукции.' })} />
+                {
+                    journals?.length > 0 && journals.map((journal) => (
+                        <JournalCard 
+                            key={journal.id}
+                            image={journal.image} 
+                            descriptions={journal.themes} 
+                        />
+                    ))
+                }
             </Container>
         </section>
     );

@@ -1,17 +1,21 @@
 import Image from 'next/image';
 import cls from './HonorCard.module.scss'
 
-const HonorCard = () => {
+const HonorCard = ({
+    title = '',
+    description = '',
+    image = ''
+}) => {
     return (
         <li className={cls.card}>
-            <h2 className={cls.card__title}>Kalite Yonetim Sistemi belgisi</h2>
-            <p className={cls.card__desc}>Quality Management System Cartificate EK/ANNEX</p>
+            <h2 className={cls.card__title}>{title}</h2>
+            <p className={cls.card__desc}>{description}</p>
             <div className={cls.card__img}>
                 <Image 
-                    src='/images/honor.png'
+                    src={image}
                     layout='fill'
                     objectFit='contain'
-                    alt='Megamix honors'
+                    alt={title}
                 />
             </div>
         </li>

@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getProductsById } from "services/products";
 
 const SingleProduct = ({product = {}}) => {
+  console.log(product);
   return (
     <>
       <SEO 
@@ -19,6 +20,10 @@ const SingleProduct = ({product = {}}) => {
         technicalSpecifications={product?.technicalSpecifications}
         packaging={product?.packaging}
         video={product?.video}
+        calcLayerWidth={product?.calcLayerWidth}
+        calcVolume={product?.calcVolume}
+        calcWaterQuantity={product?.calcWaterQuantity}
+        calcWeight={product?.calcWeight}
       />
     </>
   );
@@ -28,6 +33,7 @@ export default SingleProduct;
 
 export async function getServerSideProps({ locale, params }) {
   const product = await getProductsById(params?.id, {lang: locale })
+  console.log(product);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

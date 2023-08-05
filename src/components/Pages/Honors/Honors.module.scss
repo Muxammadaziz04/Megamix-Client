@@ -27,3 +27,23 @@
         }
     }
 }
+
+@media screen and (max-width: 760px) {
+    .honors{
+        &__list{
+            & > *{
+                max-width: calc((100% - 10px) / 2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .honors{
+        &__list{
+            & > *{
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import BreadCrumbs from 'components/UI/BreadCrumbs';
 import Categories from 'components/UI/Categories';
 import Container from 'components/UI/Container';
 import JournalCard from 'components/UI/JournalCard';
+import journals from 'constants/journals.constants';
 import { breadCrumbs, categories } from './data';
 import cls from './Journal.module.scss'
 
@@ -12,8 +13,15 @@ const JournalPage = () => {
                 <BreadCrumbs title='Журнал' breadCrumbs={breadCrumbs} />
                 <Categories categories={categories} />
                 <div className={cls.journal__list}>
-                    <JournalCard image={'/images/journal.png'} descriptions={Array(2).fill({ title: 'Темы журнала с короткой описанием', desc: 'На протяжении своей деятельности более чем 10 лет «MEGAMIX» накопил богатейший опыт работы в сфере производства строительно-отделочных материалов, и сегодня список ассортимента достиг свыше 40 наименований готовой продукции.' })} />
-                    <JournalCard image={'/images/journal.png'} descriptions={Array(2).fill({ title: 'Темы журнала с короткой описанием', desc: 'На протяжении своей деятельности более чем 10 лет «MEGAMIX» накопил богатейший опыт работы в сфере производства строительно-отделочных материалов, и сегодня список ассортимента достиг свыше 40 наименований готовой продукции.' })} />
+                    {
+                        journals?.length > 0 && journals.map((journal) => (
+                            <JournalCard
+                                key={journal.id}
+                                image={journal.image}
+                                descriptions={journal.themes}
+                            />
+                        ))
+                    }
                 </div>
             </Container>
         </div>

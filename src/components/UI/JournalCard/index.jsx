@@ -7,11 +7,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useTranslation } from 'react-i18next';
 
 const JournalCard = ({
     image = '',
     descriptions = []
 }) => {
+    const {t} = useTranslation()
+
     return (
         <div className={cls.journal}>
             <div className={cls.journal__image}>
@@ -38,8 +41,8 @@ const JournalCard = ({
                             descriptions.map((desc, index) => (
                                 <SwiperSlide key={index}>
                                     <div className={cls.journal__info}>
-                                        <h3 className={cls.journal__info__title}>{desc?.title}</h3>
-                                        <p className={cls.journal__info__desc}>{desc?.desc}</p>
+                                        <h3 className={cls.journal__info__title}>{t(desc?.title)}</h3>
+                                        <p className={cls.journal__info__desc}>{t(desc?.desc)}</p>
                                     </div>
                                 </SwiperSlide>
                             ))

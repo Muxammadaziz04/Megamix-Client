@@ -6,6 +6,7 @@ import { useTranslation } from 'next-i18next';
 import { breadCrumbs } from './data';
 import cls from './SingleProduct.module.scss'
 
+
 const SingleProductPage = ({
     image = '',
     title = '',
@@ -13,12 +14,19 @@ const SingleProductPage = ({
     description = '',
     technicalSpecifications = '',
     packaging = '',
-    video = ''
+    video = '',
+    calcLayerWidth = 0,
+    calcVolume = 0,
+    calcWaterQuantity = 0,
+    calcWeight = 0
 }) => {
     const ref = useRef()
+    const volumeRef = useRef()
+    const widthRef = useRef()
     const {t} = useTranslation()
-    const [activeTab, setActiveTab] = useState(1)
     const [width, setWidth] = useState(0)
+    const [activeTab, setActiveTab] = useState(1)
+    const [result, setResult] = useState({weight: calcWeight, water: calcWaterQuantity})
 
     useEffect(() => {
         setWidth(ref?.current?.offsetWidth)
@@ -26,6 +34,13 @@ const SingleProductPage = ({
 
     function resizeInput(e) {
         e.target.style.width = (e.target.value?.length + 2) + "ch";
+    }
+
+    function calculate(e) {
+        const width = widthRef.current?.value || 0
+        const volume = volumeRef.current?.value || 0
+        const dest = (width / calcLayerWidth) * (volume / calcVolume)
+        setResult({weight: (calcWeight * dest) || 0, water:(calcWaterQuantity * dest) || 0})
     }
 
     return (
@@ -47,8 +62,8 @@ const SingleProductPage = ({
                             </div>
                             <div className={cls.product__info__block__calc}>
                                 <div className={cls.product__info__block__calc__result}>
-                                    <span>6 kg</span>
-                                    <span>3 {t('литра воды')}</span>
+                                    <span>{result?.weight} kg</span>
+                                    <span>{result?.water} {t('литра воды')}</span>
                                 </div>
                                 <div className={cls.product__info__block__calc__inputs}>
                                     <div>
@@ -56,10 +71,12 @@ const SingleProductPage = ({
                                             {t('Слой')}
                                             <label>
                                                 <input
+                                                    ref={widthRef}
                                                     type="number"
-                                                    defaultValue={0}
+                                                    defaultValue={calcLayerWidth}
                                                     onChange={resizeInput}
                                                     onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
+                                                    onKeyUp={calculate}
                                                 />
                                                 sm
                                             </label>
@@ -68,10 +85,12 @@ const SingleProductPage = ({
                                             {t('Объём')}
                                             <label>
                                                 <input
+                                                    ref={volumeRef}
                                                     type="text"
-                                                    defaultValue={0}
+                                                    defaultValue={calcVolume}
                                                     onChange={resizeInput}
                                                     onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
+                                                    onKeyUp={calculate}
                                                 />
                                                 kv²
                                             </label>
