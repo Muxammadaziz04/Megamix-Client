@@ -7,8 +7,7 @@ export const categories = [
         link: '/company/factory',
         label: 'Производство'
     },
-    {
-        link: '/company/career',
-        label: 'Карьера'
-    },
+   // {
+   //     link: '/company/career',
+ //       label: 'Карьера'   },
 ]
