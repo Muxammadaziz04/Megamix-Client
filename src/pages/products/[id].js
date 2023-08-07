@@ -4,7 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getProductsById } from "services/products";
 
 const SingleProduct = ({product = {}}) => {
-  console.log(product);
+console.log(product?.category?.id);
   return (
     <>
       <SEO 
@@ -24,6 +24,7 @@ const SingleProduct = ({product = {}}) => {
         calcVolume={product?.calcVolume}
         calcWaterQuantity={product?.calcWaterQuantity}
         calcWeight={product?.calcWeight}
+        categoryId={product?.category?.id}
       />
     </>
   );

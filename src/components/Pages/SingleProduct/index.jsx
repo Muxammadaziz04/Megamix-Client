@@ -18,7 +18,8 @@ const SingleProductPage = ({
     calcLayerWidth = 0,
     calcVolume = 0,
     calcWaterQuantity = 0,
-    calcWeight = 0
+    calcWeight = 0,
+    categoryId = ''
 }) => {
     const ref = useRef()
     const volumeRef = useRef()
@@ -63,7 +64,7 @@ const SingleProductPage = ({
                             <div className={cls.product__info__block__calc}>
                                 <div className={cls.product__info__block__calc__result}>
                                     <span>{result?.weight} kg</span>
-                                    <span>{result?.water} {t('литра воды')}</span>
+                                    { categoryId === '45eeeec8-7ec5-4463-939d-e2a94dd30c1c' && <span>{result?.water} {t('литра воды')}</span>}
                                 </div>
                                 <div className={cls.product__info__block__calc__inputs}>
                                     <div>
@@ -78,7 +79,7 @@ const SingleProductPage = ({
                                                     onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
                                                     onKeyUp={calculate}
                                                 />
-                                                sm
+                                                {categoryId === '45eeeec8-7ec5-4463-939d-e2a94dd30c1c' && <>sm</>}
                                             </label>
                                         </div>
                                         <div>
