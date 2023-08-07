@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <NextNProgress color="#F8AB10" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} />   
       </Layout>
     </>
   )

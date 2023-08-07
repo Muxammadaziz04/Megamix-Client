@@ -9,7 +9,7 @@ const sliders = [
     '/sliders/2.png',
 ]
 
-const Carousel = () => {
+const Carousel = ({ banners = []}) => {
     return (
         <section id='home__slider' className={cls?.slider__wrapper}>
             <Container>
@@ -22,13 +22,13 @@ const Carousel = () => {
                     pagination={true}
                 >
                     {
-                        sliders?.length && sliders.map((slider, index) => (
-                            <SwiperSlide key={index}>
+                        banners?.length && banners.map((slider) => (
+                            <SwiperSlide key={slider.id}>
                                 <div style={{ position: 'relative' }}>
                                     <div className={cls.carousel}>
                                         <Image
                                             priority
-                                            src={slider}
+                                            src={slider?.image}
                                             layout="fill"
                                             objectFit='cover'
                                             alt='image'

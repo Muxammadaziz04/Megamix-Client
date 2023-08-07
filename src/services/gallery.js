@@ -17,3 +17,8 @@ export const getVideos = async (query) => {
     const {data} = await api.get(`/video?${params.toString()}`)
     return data
 }
+
+export const getBanners = async () => {
+    const {data} = await api.get('/sliders')
+    return data
+}

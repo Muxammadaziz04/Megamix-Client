@@ -11,6 +11,7 @@ const HomePage = ({
     categories = [],
     news = [],
     products = [],
+    banners = []
 }) => {
 
     return (
@@ -22,7 +23,7 @@ const HomePage = ({
             <AboutCompany />
             <Sertificates />
             <Journal />
-            <Carousel />
+            <Carousel banners={banners} />
         </>
     );
 }
