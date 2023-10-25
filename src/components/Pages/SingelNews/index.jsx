@@ -16,28 +16,29 @@ const SingleNewsPage = ({ news = {
     const { data, month, year, hours, minutes } = parseTimestamp(news?.createdAt, router.locale)
 
     return (
-        <>
+        <div itemScope itemType='http://schema.org/ImageObject'>
             <div className={cls.news}>
                 <Container>
                     <BreadCrumbs title='Пресс-релиз' breadCrumbs={[...breadCrumbs, { label: news?.title }]} />
-                    <h1 className={cls.news__title}>{news?.title}</h1>
-                    <span className={cls.news__date}>{data} {month} {year}  |  {hours}:{minutes}</span>
+                    <h1 className={cls.news__title} itemProp='name'>{news?.title}</h1>
+                    <span className={cls.news__date} itemProp='datePublished'>{data} {month} {year}  |  {hours}:{minutes}</span>
                 </Container>
             </div>
             <div className={cls.news__body}>
                 <Container className={cls.news__body__container}>
                     <div className={cls.news__body__image}>
                         <Image
+                            itemProp='contentUrl'
                             src={news?.image}
                             layout='fill'
                             objectFit='cover'
                             alt={news?.title}
                         />
                     </div>
-                    <p className={cls.news__body__desc}>{news?.description}</p>
+                    <p className={cls.news__body__desc} itemProp='description'>{news?.description}</p>
                 </Container>
             </div>
-        </>
+        </div>
     );
 }
 

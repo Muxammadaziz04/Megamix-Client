@@ -12,18 +12,24 @@ const BreadCrumbs = ({
     return (
         <div className={cls.breadcrumb}>
             {title && <h2 className={cls.breadcrumb__title}>{t(title)}</h2>}
-            <ul className={cls.breadcrumb__items}>
+            <ul className={cls.breadcrumb__items} itemScope itemType='https://schema.org/BreadcrumbList'>
                 {
                     breadCrumbs?.length > 0 && breadCrumbs.map((crumb, index) => (
                         <Fragment key={index}>
-                            <li className={cls.breadcrumb__items__children}>
+                            <li 
+                                className={cls.breadcrumb__items__children} 
+                                itemScope
+                                itemProp="itemListElement" 
+                                itemType="https://schema.org/ListItem"
+                            >
                                 {crumb.link ? (
                                     <Link href={crumb.link}>
-                                        <a>{t(crumb.label)}</a>
+                                        <a itemProp='item'><span itemProp='name'>{t(crumb.label)}</span></a>
                                     </Link>
                                 ) : (
-                                    <>{t(crumb.label)}</>
+                                    <span itemProp='name'>{t(crumb.label)}</span>
                                 )}
+                                <meta itemProp="position" content={index + 1} />
                             </li>
                             {index !== breadCrumbs?.length - 1 && <>&gt;</>}
                         </Fragment>

@@ -1,11 +1,16 @@
 import AboutCompanyPage from "components/Pages/AboutCompany";
 import SEO from "components/SEO";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const AboutCompany = () => {
+    const {t} = useTranslation()
     return (
         <>
-            <SEO /> 
+            <SEO 
+                title={t('О Компании') + ' | Megamix'}
+                description={t('О Компании') + ' | Megamix'}
+            /> 
             <AboutCompanyPage />
         </>
     );

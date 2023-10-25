@@ -9,7 +9,10 @@ const News = ({news = []}) => {
 
   return (
     <>
-      <SEO title={`${t('Новости')} | Megamix`} />
+      <SEO 
+        title={`${t('Новости')} | Megamix`} 
+        description={`${t('Новости')} | Megamix`}
+      />
       <NewsPage news={news} />
     </>
   );

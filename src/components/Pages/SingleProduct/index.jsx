@@ -48,12 +48,13 @@ const SingleProductPage = ({
         <div className={cls.product}>
             <Container className={cls.product__container}>
                 <BreadCrumbs title={title} breadCrumbs={[...breadCrumbs, { label: title }]} />
-                <div className={cls.product__info}>
+                <div className={cls.product__info} itemScope itemType="http://schema.org/ImageObject">
                     <div>
                         <div className={cls.product__info__block}>
                             <div>
                                 <div className={cls.product__info__block__img}>
                                     <Image
+                                        itemProp='contentUrl'
                                         src={image}
                                         layout='fill'
                                         objectFit='contain'
@@ -104,7 +105,7 @@ const SingleProductPage = ({
                         {video ? <video src="/video.mp4" controls></video> : <img src='/images/empty_video.png' />}
                     </div>
                     <div className={cls.product__info__desc}>
-                        <h1>{title}</h1>
+                        <h1 itemProp='name'>{title}</h1>
                         <span>{weight}</span>
                         <ul>
                             <li className={activeTab === 1 ? cls.active : ''} onClick={() => setActiveTab(1)}>{t('Описание')}</li>
@@ -113,7 +114,7 @@ const SingleProductPage = ({
                         </ul>
                         <div ref={ref}>
                             <div style={{ left: `-${(activeTab - 1) * width}px` }}>
-                                <p style={{ maxWidth: `${width}px` }}>{description}</p>
+                                <p style={{ maxWidth: `${width}px` }} itemProp='description'>{description}</p>
                                 <p style={{ maxWidth: `${width}px` }}>{technicalSpecifications}</p>
                                 <p style={{ maxWidth: `${width}px` }}>{packaging}</p>
                             </div>

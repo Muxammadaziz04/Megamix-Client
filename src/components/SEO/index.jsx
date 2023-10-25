@@ -1,11 +1,12 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 import settings from "./settings";
 import socialTags from "./socialTags";
 
 const SEO = (props) => {
     const { title, description, keywords } = props;
-
+    const router = useRouter()
     return (
         <Head>
             <meta
@@ -23,6 +24,11 @@ const SEO = (props) => {
             <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#6e99a6" />
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="theme-color" content="#ffffff" />
+            {
+                router.locales?.filter(locale => locale !== router.locale).map(locale => (
+                    <link rel="alternate" hrefLang={locale} href={`https://megamix.uz/${locale === 'ru' ? '' : locale}${router.asPath}`}></link>
+                ))
+            }
 
             {socialTags(props).map(({ name, content }) => {
                 return <meta key={name} property={name} content={content} />;

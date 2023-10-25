@@ -9,7 +9,10 @@ const FotoGallery = ({gallery = []}) => {
 
   return (
     <>
-      <SEO title={`${t('Фото галерея')} | Megamix `} />
+      <SEO 
+        title={`${t('Фото галерея')} | Megamix `} 
+        description={`${t('Фото галерея')} | Megamix `}
+      />
       <FotoGalleryPage gallery={gallery} />
     </>
   );

@@ -4,11 +4,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getProductsById } from "services/products";
 
 const SingleProduct = ({product = {}}) => {
-console.log(product?.category?.id);
+
   return (
     <>
       <SEO 
-        title={`${product?.title} | Megamix`}
+        title={`${product?.title} ${`| ${product?.category?.name}` || ''} | Megamix`}
         description={product?.description}
         image={product?.foto}
       />

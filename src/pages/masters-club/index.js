@@ -9,7 +9,7 @@ const MastersClub = ({club = []}) => {
 
     return (
         <>
-            <SEO title={t('Клуб мастеров')} />
+            <SEO title={t('Клуб мастеров') + ' | Megamix'} description={t('Клуб мастеров') + ' | Megamix'} />
             <MastersClubPage club={club} />
         </>
     );

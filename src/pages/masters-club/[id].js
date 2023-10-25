@@ -6,7 +6,11 @@ import { getClubById } from "services/club";
 const SingleMasterClub = ({ club = {} }) => {
     return (
         <>
-            <SEO />
+            <SEO 
+                title={club.title}
+                description={club?.description}
+                image={club.image}
+            />
             <SingleMasterClubPage 
                 title={club?.title}
                 description={club?.description}

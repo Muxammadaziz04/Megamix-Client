@@ -7,7 +7,7 @@ const Journal = () => {
   const { t } = useTranslation()
   return (
     <>
-      <SEO title={`${t('Журнал')} | Megamix`} />
+      <SEO title={`${t('Журнал')} | Megamix`} description={`${t('Журнал')} | Megamix`} />
       <JournalPage />
     </>
   );
