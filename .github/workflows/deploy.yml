@@ -38,7 +38,7 @@ jobs:
           script: |
             cd /root/megamix/megamix-client
             git stash
-            git pull origin test
+            git pull origin main
             npm install --yes --legacy-peer-deps
             npm run build
             pm2 restart megamix-client
