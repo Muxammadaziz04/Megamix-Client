@@ -1,9 +1,8 @@
 import { getProducts } from "services/products";
 import { getNews } from 'services/news'
 
-const generateSiteMap = ({products = [], news = []}) => {
-    return `
-<?xml version="1.0" encoding="UTF-8"?>
+const generateSiteMap = ({ products = [], news = [] }) => {
+    return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <!-- Главная страница -->
     <url>
@@ -49,30 +48,28 @@ const generateSiteMap = ({products = [], news = []}) => {
     </url>
 
     <!-- Новости -->
-    ${
-        news?.length > 0 && news.map(news => (
-          `<url>
+    ${news?.length > 0 && news.map(news => (
+        `<url>
                 <loc>https://megamix.uz/press-release/news/${news?.id}</loc>
                 <priority>0.6</priority>
                 <image:image>
                     <image:loc>${news?.image}</image:loc>
                 </image:image>
             </url>`
-        ))
-    }
+    ))
+        }
 
     <!-- Товары в категориях -->
-    ${
-        products?.length > 0 && products.map(product => (
-        `<url>
+    ${products?.length > 0 && products.map(product => (
+            `<url>
             <loc>https://megamix.uz/products/${product?.id}</loc>
             <priority>1.0</priority>
             <image:image>
-                <image:loc>${product?.image}</image:loc>
+                <image:loc>${product?.foto}</image:loc>
             </image:image>
         </url>`
         ))
-    }
+        }
 
     <!-- Другие страницы сайта -->
     <url>
@@ -112,8 +109,8 @@ function SiteMap() {
 }
 
 export async function getServerSideProps({ res }) {
-    const products = await getProducts();
-    const news = await getNews()
+    const products = await getProducts({ limit: 200 });
+    const news = await getNews({ limit: 100 })
     const sitemap = generateSiteMap({ products: products?.rows, news: news?.rows });
 
     res.setHeader('Content-Type', 'text/xml');
