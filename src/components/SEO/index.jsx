@@ -26,7 +26,7 @@ const SEO = (props) => {
             <meta name="theme-color" content="#ffffff" />
             {
                 router.locales?.filter(locale => locale !== router.locale).map(locale => (
-                    <link rel="alternate" hrefLang={locale} href={`https://megamix.uz/${locale === 'ru' ? '' : locale}${router.asPath}`}></link>
+                    <link key={locale} rel="alternate" hrefLang={locale} href={`https://megamix.uz/${locale === 'ru' ? '' : locale}${router.asPath}`}></link>
                 ))
             }
 
