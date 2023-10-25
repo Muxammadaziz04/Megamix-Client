@@ -7,7 +7,7 @@ const SingleNews = ({ news = {} }) => {
   return (
     <>
       <SEO
-        title={`Megamix | ${news?.title}`}
+        title={`${news?.title} | Megamix`}
         description={news?.description}
         image={news?.image}
       />

@@ -8,7 +8,7 @@ console.log(product?.category?.id);
   return (
     <>
       <SEO 
-        title={`Megamix | ${product?.title}`}
+        title={`${product?.title} | Megamix`}
         description={product?.description}
         image={product?.foto}
       />

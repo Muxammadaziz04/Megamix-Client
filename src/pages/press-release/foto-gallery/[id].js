@@ -7,7 +7,7 @@ const singleGallery = ({ gallery = {} }) => {
   return (
     <>
       <SEO
-        title={`Megamix | ${gallery?.description}`}
+        title={`${gallery?.description} ! Megamix `}
         description={gallery?.description}
         image={gallery?.images?.[0]}
       />

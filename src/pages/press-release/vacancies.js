@@ -9,7 +9,7 @@ const Vacancies = ({vacancies = []}) => {
 
   return (
     <>
-      <SEO title={`Megamix | ${t('Вакансии')}`} />
+      <SEO title={`${t('Вакансии')} | Megamix`} />
       <VacanciesPage vacancies={vacancies} />
     </>
   );

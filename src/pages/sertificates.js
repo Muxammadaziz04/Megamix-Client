@@ -9,7 +9,7 @@ const Sertificates = () => {
 
   return (
     <>
-      <SEO title={`Megamix | ${t('Сертификаты')}`} />
+      <SEO title={`${t('Сертификаты')} | Megamix`} />
       <SertificatesPage />
     </>
   );

@@ -8,7 +8,7 @@ const Honors = () => {
 
   return (
     <>
-      <SEO title={`Megamix | ${t('Награды')}`} />
+      <SEO title={`${t('Награды')} | Megamix`} />
       <HonorsPage />
     </>
   );

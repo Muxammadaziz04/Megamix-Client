@@ -10,7 +10,7 @@ const Products = ({ categories = [], products = [], productsCount = 0 }) => {
 
   return (
     <>
-      <SEO title={`Megamix | ${categories?.find(ctg => ctg.id === router?.query?.id)?.name}`} />
+      <SEO title={`${categories?.find(ctg => ctg.id === router?.query?.id)?.name} | Megamix`} />
       <ProductsPage
         categories={categories}
         products={products}

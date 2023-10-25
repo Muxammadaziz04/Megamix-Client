@@ -9,7 +9,7 @@ const VideoGallery = ({videos = []}) => {
 
   return (
     <>
-      <SEO title={`Megamix | ${t('Видео галерея')}`} />
+      <SEO title={`${t('Видео галерея')} | Megamix`} />
       <VideoGalleryPage videos={videos} />
     </>
   );
