@@ -48,10 +48,10 @@ const SingleProductPage = ({
         <div className={cls.product}>
             <Container className={cls.product__container}>
                 <BreadCrumbs title={title} breadCrumbs={[...breadCrumbs, { label: title }]} />
-                <div className={cls.product__info} itemScope itemType="http://schema.org/ImageObject">
+                <div className={cls.product__info}>
                     <div>
                         <div className={cls.product__info__block}>
-                            <div>
+                            <div itemScope itemType="http://schema.org/ImageObject">
                                 <div className={cls.product__info__block__img}>
                                     <Image
                                         itemProp='contentUrl'
