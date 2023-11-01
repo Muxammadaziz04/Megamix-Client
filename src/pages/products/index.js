@@ -2,17 +2,19 @@ import ProductsPage from "components/Pages/Products";
 import SEO from "components/SEO";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { getCategories } from "services/categories";
 import { getProducts } from "services/products";
 
 const Products = ({ categories = [], products = [], productsCount = 0 }) => {
   const router = useRouter()
+  const {t} = useTranslation()
 
   return (
     <>
       <SEO 
-        title={`${categories?.find(ctg => ctg.id === router?.query?.id)?.name} | Megamix`} 
-        description={`${categories?.find(ctg => ctg.id === router?.query?.id)?.name} | Megamix`}
+        title={`${categories?.find(ctg => ctg.id === router?.query?.id)?.name} | Megamix | ${t('Страница')} - ${router.query?.page || 1}`} 
+        description={`${categories?.find(ctg => ctg.id === router?.query?.id)?.name} | Megamix | ${t('Страница')} - ${router.query?.page || 1}`}
       />
       <ProductsPage
         categories={categories}

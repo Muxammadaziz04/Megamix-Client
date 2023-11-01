@@ -1,6 +1,7 @@
 import HomePage from "components/Pages/Home";
 import SEO from "components/SEO";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 import { getCategories } from "services/categories";
 import { getBanners } from "services/gallery";
 import { getNews } from "services/news";
@@ -12,10 +13,12 @@ export default function Home({
   products = [],
   banners = []
 }) {
-
+  const {t} = useTranslation()
   return (
     <>
-      <SEO />
+      <SEO 
+        title={`Megamix | ${t('Главная')}`}
+      />
       <HomePage
         categories={categories}
         news={news}
