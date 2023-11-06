@@ -5,7 +5,8 @@ const nextConfig = {
   reactStrictMode: false,
   i18n,
   images: {
-    domains: ['api.megamix.getter.uz', 'images.unsplash.com', 'api.megamix.uz']
+    domains: ['api.megamix.getter.uz', 'images.unsplash.com', 'api.megamix.uz'],
+    formats: ['image/avif', 'image/webp']
   }
 }
 
