@@ -27,7 +27,6 @@ const Carousel = ({ banners = []}) => {
                                 <div style={{ position: 'relative' }}>
                                     <div className={cls.carousel}>
                                         <Image
-                                            priority
                                             src={slider?.image}
                                             layout="fill"
                                             objectFit='cover'
