@@ -6,7 +6,7 @@ const nextConfig = {
   i18n,
   images: {
     domains: ['api.megamix.getter.uz', 'images.unsplash.com', 'api.megamix.uz'],
-    formats: ['image/avif', 'image/webp']
+    formats: ['image/avif', 'image/webp', 'image/png']
   }
 }
 
