@@ -28,8 +28,8 @@ const ProductCard = ({
                             src={image}
                             objectFit='contain'
                             layout='fill'
-                            placeholder='blur'
-                            priority
+                           // placeholder='blur'
+                           // priority
                             alt={`Megamix ${title}`}
                         />
                     </div>
