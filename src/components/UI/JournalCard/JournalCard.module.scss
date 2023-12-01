@@ -37,6 +37,13 @@
             font-weight: 400;
             line-height: 30px;
         }
+
+        &>a {
+            color: #2B2A29;
+            font-size: 22px;
+            line-height: normal;
+            text-decoration-line: underline;
+        }
     }
 }
 
@@ -44,6 +51,7 @@
     .journal {
         &__info {
             padding: 30px;
+
             &__desc {
                 overflow: hidden;
                 display: -webkit-box;
@@ -56,9 +64,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .journal{
-        &__info{
-            &__desc{
+    .journal {
+        &__info {
+            &__desc {
                 margin-bottom: 40px;
             }
         }
@@ -66,14 +74,17 @@
 }
 
 @media screen and (max-width: 640px) {
-    .journal{
+    .journal {
         flex-direction: column;
-        & > div:first-child{
+
+        &>div:first-child {
             border-bottom: none;
         }
+
         &>div {
             max-width: 100%;
         }
+
         &>div:nth-child(2) {
             border-top: none;
             max-width: 100%;

@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next';
 import JournalCard from 'components/UI/JournalCard';
 import Container from 'components/UI/Container';
-import cls from './Journal.module.scss'
 import Link from 'next/link';
 import journals from 'constants/journals.constants';
+import cls from './Journal.module.scss'
 
 const Journal = () => {
     const { t } = useTranslation()
@@ -22,7 +22,7 @@ const Journal = () => {
                     journals?.length > 0 && journals.map((journal) => (
                         <JournalCard 
                             key={journal.id}
-                            image={journal.image} 
+                            images={journal.images} 
                             descriptions={journal.themes} 
                         />
                     ))

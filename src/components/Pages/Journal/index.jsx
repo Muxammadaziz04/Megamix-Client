@@ -20,7 +20,7 @@ const JournalPage = () => {
                         journals?.length > 0 && journals.map((journal) => (
                             <JournalCard
                                 key={journal.id}
-                                image={journal.image}
+                                images={journal.images}
                                 descriptions={journal.themes}
                             />
                         ))

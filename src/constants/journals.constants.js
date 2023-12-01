@@ -3,6 +3,11 @@ const journals = [
         id: 1,
         image: '/images/journal.jpg',
         file: '',
+        images: [
+            '/images/journal-1.jpg',
+            '/images/journal-2.jpg',
+            '/images/journal-3.jpg',
+        ],
         themes: [
             {
                 id: 1,

@@ -8,22 +8,42 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
 
 const JournalCard = ({
-    image = '',
+    images = [],
     descriptions = []
 }) => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     return (
         <div className={cls.journal}>
             <div className={cls.journal__image}>
-                <Image
-                    src={image}
-                    layout='fill'
-                    objectFit='cover'
-                    alt='journal'
-                />
+                <Swiper
+                    speed={600}
+                    loop
+                    autoplay={{ delay: 3500 }}
+                    modules={[Autoplay, Pagination]}
+                    pagination={true}
+                    slidesPerView={1}
+                    centeredSlides
+                    allowTouchMove={false}
+                >
+                    {
+                        images?.length > 0 && images.map((image, index) => (
+                            <SwiperSlide key={index}>
+                                <div className={cls.journal__image}>
+                                    <Image
+                                        src={image}
+                                        layout='fill'
+                                        objectFit='cover'
+                                        alt='journal'
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
             </div>
             <div>
                 {descriptions?.length > 0 && (
@@ -43,6 +63,7 @@ const JournalCard = ({
                                     <div className={cls.journal__info}>
                                         <h3 className={cls.journal__info__title}>{t(desc?.title)}</h3>
                                         <p className={cls.journal__info__desc}>{t(desc?.desc)}</p>
+                                        <Link href='/press-release/journal/single'><a>{t('Читать журнал')}</a></Link>
                                     </div>
                                 </SwiperSlide>
                             ))

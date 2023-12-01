@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const inputRef = useRef()
-    const router = useRouter()
+    const router = useRouter()  
     const { t } = useTranslation(['common'])
     const [isOpenBurger, setIsOpenBurger] = useState(null)
     const [isOpenLngModal, setIsOpenLngModal] = useState(false)
