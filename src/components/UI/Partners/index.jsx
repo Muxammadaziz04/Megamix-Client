@@ -36,6 +36,7 @@ const Partners = () => {
                             <div>
                                 <Image
                                     src={partner}
+                                    // priority 
                                     layout="fill"
                                     objectFit="contain"
                                     alt="Megamix partner"
