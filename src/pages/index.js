@@ -7,16 +7,16 @@ import { getBanners } from "services/gallery";
 import { getNews } from "services/news";
 import { getProducts } from "services/products";
 
-export default function Home({ 
+export default function Home({
   categories = [],
   news = [],
   products = [],
   banners = []
 }) {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
     <>
-      <SEO 
+      <SEO
         title={`Megamix | ${t('Главная')}`}
       />
       <HomePage
@@ -32,7 +32,7 @@ export default function Home({
 export async function getServerSideProps({ locale }) {
   const categories = await getCategories({ lang: locale })
   const news = await getNews({ limit: 5, lang: locale })
-  const products = await getProducts({limit: 6, lang: locale})
+  const products = await getProducts({ limit: 6, lang: locale, categoryId: '45eeeec8-7ec5-4463-939d-e2a94dd30c1c' })
   const banners = await getBanners()
 
   return {

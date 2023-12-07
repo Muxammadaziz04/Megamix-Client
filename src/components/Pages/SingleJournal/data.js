@@ -13,7 +13,7 @@ export const journal = {
     ru: {
         title: 'Презентационный каталог 2023-2024',
         subtitle: 'Обращение совета директоров компании',
-        description: `
+        description1: `
         Потребность в собственном, безопасном жилище присуща каждому без исключения человеку еще со времен сотворения мира. Это, что называется, базовый инстинкт самосохранения, содействовать которому - почетная миссия строителей всех веков и народов. Традиции наших великих предков стали для нас эталоном и высокой планкой. Как известно, на Востоке издавна прочность и долговечность строений сочетались с удивительным по красоте орнаментом и декором, краски которого не поблекли и поныне. Сегодня в Узбекистане можно воочию полюбоваться этими легендарными архитектурными шедеврами времён Великого Шёлкового пути. Сказочные медресе и дворцы поражают мастерством предков-усто. 
         <br />
         <br />
@@ -22,7 +22,8 @@ export const journal = {
         <br />
         За последние годы облик нашей страны преобразился до неузнаваемости. Достойным продолжением великих вековых традиций прошлого стали инновации градостроительства, грандиозные и одновременно самобытные объекты третьего тысячелетия. Гордимся, что многие из них создавались с участием передовых строительно - отделочных материалов национального бренда «MEGAMIX». 
         <br />
-        <br />
+        <br />`,
+        description2: `
         <b>«MEGAMIX»: традиции, инновации, надежность! </b>
         <br />
         <br />
@@ -84,6 +85,8 @@ export const journal = {
         На сегодняшний день общая мощность производства сухих строительных смесей компании «MEGAMIX» достигла 2,5 тыс. тонн/сутки. В планах компании — дальнейшее внедрение энергосберегающих и энергоэффективных технологий, постоянная модернизация производства, развитие научно- исследовательских и опытно-конструкторских работ. 
         <br />
         <br />
+        `,
+        description3: `
         <b>Логистика</b> 
         <br />
         <br />
@@ -127,84 +130,85 @@ Masalan, Buxorodagi mohirlik bilan bunyod etilgan, o‘n asrdan ko‘proq vaqt d
 <br /><br />
 So‘nggi yillarda mamlakatimiz qiyofasi tanib bo‘lmas darajada o‘zgardi.
 Uchinchi ming yillikning shaharsozlikdagi innovatsiyalari, ulug‘vor va ayni paytda o‘ziga xos obyektlari o‘tmishning ko‘p asrlik buyuk an’analarning munosib davomi bo‘ldi. Bularning aksariyati "MEGAMIX" milliy brendining ilg‘or qurilish va pardozlash materiallari ishtirokida bunyod etilgani biz uchun yuksak sharaf va faxr ekanligini aloxida e’tirof etamiz.
-<br /><br />
-
-<b>"MEGAMIX": an’analar, innovatsiyalar, ishonch!</b>
-<br /><br />
-<b>Kompaniya faktlari:</b>
-<br /><br />
-1. Soha yetakchisi, 20 yillik tajriba.
-"MEGAMIX" tovar belgisining huquqiy sohibi - «FUBER SIDE-PLAST» MCHJ hisoblanadi: eng so‘nggi texnik talablar asosida yuqori darajadagi ekologik xususiyatlarga ega bo‘lgan O‘zbekistondagi ilg‘or qurilish va pardozlash materiallarini ishlab chiqaruvchi eng yirik kompaniyalardan biridir. “MEGAMIX" kompaniyasi o‘zining 20 yildan ortiq bo’lgan faoliyati davomida keng qamrovli juda boy ish tajribasini orttirdi. Rivojlanishning asosiy bosqichlari:
-<br /><br />
-2. 2000 – 2001 yillar: quruq qurilish qorishmalari bozorini o‘rganish va tahlil qilish. Monitoring natijalariga ko‘ra, respublikada quruq qurilish qorishmalarining (QQQ) to‘laqonli ishlab chiqarishini tashkil etish uchun barcha shart-sharoitlar, shu jumladan, asosiy hom ashyoning va zarur imkoniyatlarining mavjudligi aniqlandi.
-<br /><br />
-3. 2001 yil – Toshkent shaxrida quruq qurilish qorishmalari ishlab chiqarish zavodining qurilishi boshlandi. Birinchi mahsulotning ishlab chiqarilishi, bu: «Satin Gyps» pardozlash qorishmasi, «Adhesive tile and ceramic» keramik plitkalar uchun yopishtiruvchi yelim.
-<br /><br />
-4. 2004 yil - "MEGAMIX" tovar belgisi uchun patent olindi.
-<br /><br />
-5. 2009 yil – Suv asosidagi emultsiya bo’yoqlarini ishlab chiqarish yo’lga qo’yildi.
-<br /><br />
-6. 2010 yil – Toshkent shaxrida ikkinchi zavod, faqat gips asosidagi quruq qurilish qorishmalari ishlab chiqarish zavodi qurildi.
-<br /><br />
-7. 2014 yil - kompaniyaning rebrendingi amalga oshirildi.
-<br /><br />
-8. 2014-2021 yy. "MEGAMIX" kompaniyasining joylarda: Buxoro, Samarqand, Xorazm, Farg‘ona viloyatlarida zavodlar tarmog‘i tashkil etildi.
-<br /><br />
-9. "MEGAMIX" kompaniyasi 60 dan ortiq turdagi import o‘rnini bosuvchi va eksportga yo‘naltirilgan mahsulotlarni ishlab chiqaradi.
-<br /><br />
-Bu nafaqat pardozlash yoki suvoq kabi standart quruq qurilish qorishmalari, balki keramika, granit, mozaika va boshqa plitkalar uchun yelimlardir, quyma pol, gidroizolyatsiya materiallari, dekorativ fasad qoplamalar, maxsus gruntovkalar, suv emultsiya bo‘yoqlari, gulqog’oz yelimlari va boshqalar.
-<br /><br />
-10. Laboratoriya sharoitida sifat nazorati.
-Zamonaviy uskunalar bilan jihozlangan "MEGAMIX" kompaniyasining laboratoriyasi barcha hom ashyo va tayyor mahsulotlarni qat’iy nazoratini amalga oshiradi.
-<br /><br />
-11. Xalqaro sifat sertifikati.
-"MEGAMIX" kompaniyasining butun mahsulotlar to’plami ISO 9001:2008 sifat menejmenti tizimi va davlat standartlariga muvofiqlik sertifikatlari asosida ishlab chiqariladi.
-<br /><br />
-
-<b>Brend shiorlari</b>
-<br /><br />
-1. Shubhasiz...
-<br />
-2. Oila.Bunyodkorlik.Baxt.
-<br />
-3. Barokatli
-<br /><br />
-
-<b>Zavodlar.Odamlar.Ishlab chiqarish.</b>
-<br /><br />
-O’zbekiston bo’ylab "MEGAMIX" kompaniyasi zavodlarining umumiy soni oltita sanoat korxonasiga yetdi. Kompaniya hududlarni rivojlantirish, aholi bandligini ta’minlash, ishlab chiqarish hajmlari va assortimentning o‘sishi uchun ko’maklashishga intilmoqda.
-<br /><br />
-Kompaniya ustuvorliklari – xalqaro standartlarga muvofiq va zamonaviy tendensiyalarni hisobga olgan holda korxonalar rahbarlari va xodimlarining malakasini oshirishdan iboratdir. Bu esa o’z navbatida ekologik, seysmik, yong‘indan himoya qilish va boshqa standartlar talablariga muvofiq ishlab chiqarilayotgan qurilish materiallari sifatini oshirishga yordam beradi.
-<br /><br />
-Bugungi kunga kelib, "MEGAMIX" kompaniyasi quruq qurilish qorishmalari ishlab chiqarishning umumiy quvvati kuniga 2,5 ming tonnaga yetdi. Kompaniya rejasida – energiyani tejaydigan va samarador energiya texnologiyalarini joriy etish, ishlab chiqarishni uzluksiz modernizatsiya qilish, ilmiy—tadqiqot va eksperimental ishlarni rivojlantirish ko‘zda tutilgan.
-<br /><br />
-
-<b>Logistika</b>
-<br /><br />
-"MEGAMIX" kompaniyasi iste’molchilar bilan uzoq muddatli shartnomalar asosida ishonchli munosabatlarni o‘rnatish uchun izlanishda bardavomdir. Bu logistika jarayonlarini boshqarish tizimini doimiy ravishda takomillashtirishni talab qiladi, ya’ni hom ashyo ta’minlab berishdan, to tayyor mahsulotni etkazib berishgacha bo’lgan jarayonlarni o’z ichiga oladi.
-<br /><br />
-
-"MEGAMIX" kompaniyasi o‘zining xususiy avtoparkiga ega bo’lib, bular: 20 dan ortiq «ISUZU» yuk avtomashinalari, shuningdek uzun yuk avtomashinalari, samosvallar va 100 dan ortiq boshqa transport vositalaridir.
-<br /><br />
-
-MEGAMIX kompaniyasi ombor zaxiralarini, statik operatsiyalarni optimallashtirish, asosiy ishlab chiqarish jarayonlarini tovar-moddiy boyliklari: hom ashyo va tayyor mahsulotni hisobga olish tizimi bilan o‘zaro bog‘liqligini avtomatlashtirishni joriy etish bo‘yicha ishlarni doimiy ravishda amalga oshiradi.
-<br /><br />
-
-So’ngi yillardagi eng muhim va keng ko’lamli loyhalarni qurishda "MEGAMIX" brendining quruq qurilish qorishmalari va bo‘yoqlari mamlakatimiz poytaxti va shaharlarida keng qo‘llanilmoqda:
-<br /><br />
-Andijon (Devonaboy masjidi, Sharja University), Buxoro (Bukhara Grand Hotel, Hotel Services International), Denov (Said Ataliq Madrasasi, Denov Yangi Masjidi, VBM Romiteks), Nukus (Nukus City turar-joy majmuasi), Samarqand («Samarqand» xalqaro aeroporti, Ice Arena - muz saroyi), Namangan (Istiqlol desine marketi, Rim Restaurant), Urganch (Bravo Lyuks mehmonxonasi), Xiva (Farovon Khiva Hotel), Farg‘ona (Asia.UzSupermarket).
-<br /><br />
-
-<b>Qo‘llash. Xususiyatlar. Palitra.</b>
-<br /><br />
-Super zamonaviy binolar: madaniyat va sport ob’yektlari, masjidlar, otellar, restoranlar, savdo va turar-joy mamualari qurilishida MEGAMIX kompaniyasining quruq qurilish qorishmalarini qo‘llash –yetakchi mahalliy qurilish kompaniyalarining tanlovidir.
-Bugungi kunda MEGAMIX – dunyoning o’ta yirik kompaniyalari buyurtmasiga ko’ra o‘z mahsulotlarini MDH davlatlariga va Markaziy Osiyoga eksport qilayotgan respublikadagi yagona kompaniyadir.
-<br /><br />
-
-Zamonaviy qurilish materiallari bozori ko‘plab ishtirokchilardan iborat ekanligiga qaramay, “MEGAMIX" milliy brendi o‘zi tanlagan yo‘liga sadoqat bilan yondashib o’z yo’nalishini o‘zgartirmaydi: an’analar - innovatsiyalar - ishonch. Soha bilan birgalikda rivojlanib, biz oxirgi yangiliklarni joriy etishni davom ettiramiz, mijozlarimiz uchun eng qulay kompleks yechimlarni izlab, yangi avlod qurilish pardozlash materiallarining eng yaxshi va eng mashhur namunalarini taqdim etishda davom etamiz, barchasi siz uchun, aziz do‘stlar.
-<br /><br />
-Vaqt sinovidan o‘tib qozonilgan obro‘, maksimal xavfsizlik va qulaylik, biznes sherikdan ham ortiq sanalgan "MEGAMIX" - bu sizning loyihalaringizni qurishda sadoqatli va ishonchli hamkor.
-        `
+<br /><br />`,
+        description2: `
+        <b>"MEGAMIX": an’analar, innovatsiyalar, ishonch!</b>
+        <br /><br />
+        <b>Kompaniya faktlari:</b>
+        <br /><br />
+        1. Soha yetakchisi, 20 yillik tajriba.
+        "MEGAMIX" tovar belgisining huquqiy sohibi - «FUBER SIDE-PLAST» MCHJ hisoblanadi: eng so‘nggi texnik talablar asosida yuqori darajadagi ekologik xususiyatlarga ega bo‘lgan O‘zbekistondagi ilg‘or qurilish va pardozlash materiallarini ishlab chiqaruvchi eng yirik kompaniyalardan biridir. “MEGAMIX" kompaniyasi o‘zining 20 yildan ortiq bo’lgan faoliyati davomida keng qamrovli juda boy ish tajribasini orttirdi. Rivojlanishning asosiy bosqichlari:
+        <br /><br />
+        2. 2000 – 2001 yillar: quruq qurilish qorishmalari bozorini o‘rganish va tahlil qilish. Monitoring natijalariga ko‘ra, respublikada quruq qurilish qorishmalarining (QQQ) to‘laqonli ishlab chiqarishini tashkil etish uchun barcha shart-sharoitlar, shu jumladan, asosiy hom ashyoning va zarur imkoniyatlarining mavjudligi aniqlandi.
+        <br /><br />
+        3. 2001 yil – Toshkent shaxrida quruq qurilish qorishmalari ishlab chiqarish zavodining qurilishi boshlandi. Birinchi mahsulotning ishlab chiqarilishi, bu: «Satin Gyps» pardozlash qorishmasi, «Adhesive tile and ceramic» keramik plitkalar uchun yopishtiruvchi yelim.
+        <br /><br />
+        4. 2004 yil - "MEGAMIX" tovar belgisi uchun patent olindi.
+        <br /><br />
+        5. 2009 yil – Suv asosidagi emultsiya bo’yoqlarini ishlab chiqarish yo’lga qo’yildi.
+        <br /><br />
+        6. 2010 yil – Toshkent shaxrida ikkinchi zavod, faqat gips asosidagi quruq qurilish qorishmalari ishlab chiqarish zavodi qurildi.
+        <br /><br />
+        7. 2014 yil - kompaniyaning rebrendingi amalga oshirildi.
+        <br /><br />
+        8. 2014-2021 yy. "MEGAMIX" kompaniyasining joylarda: Buxoro, Samarqand, Xorazm, Farg‘ona viloyatlarida zavodlar tarmog‘i tashkil etildi.
+        <br /><br />
+        9. "MEGAMIX" kompaniyasi 60 dan ortiq turdagi import o‘rnini bosuvchi va eksportga yo‘naltirilgan mahsulotlarni ishlab chiqaradi.
+        <br /><br />
+        Bu nafaqat pardozlash yoki suvoq kabi standart quruq qurilish qorishmalari, balki keramika, granit, mozaika va boshqa plitkalar uchun yelimlardir, quyma pol, gidroizolyatsiya materiallari, dekorativ fasad qoplamalar, maxsus gruntovkalar, suv emultsiya bo‘yoqlari, gulqog’oz yelimlari va boshqalar.
+        <br /><br />
+        10. Laboratoriya sharoitida sifat nazorati.
+        Zamonaviy uskunalar bilan jihozlangan "MEGAMIX" kompaniyasining laboratoriyasi barcha hom ashyo va tayyor mahsulotlarni qat’iy nazoratini amalga oshiradi.
+        <br /><br />
+        11. Xalqaro sifat sertifikati.
+        "MEGAMIX" kompaniyasining butun mahsulotlar to’plami ISO 9001:2008 sifat menejmenti tizimi va davlat standartlariga muvofiqlik sertifikatlari asosida ishlab chiqariladi.
+        <br /><br />
+        
+        <b>Brend shiorlari</b>
+        <br /><br />
+        1. Shubhasiz...
+        <br />
+        2. Oila.Bunyodkorlik.Baxt.
+        <br />
+        3. Barokatli
+        <br /><br />
+        
+        <b>Zavodlar.Odamlar.Ishlab chiqarish.</b>
+        <br /><br />
+        O’zbekiston bo’ylab "MEGAMIX" kompaniyasi zavodlarining umumiy soni oltita sanoat korxonasiga yetdi. Kompaniya hududlarni rivojlantirish, aholi bandligini ta’minlash, ishlab chiqarish hajmlari va assortimentning o‘sishi uchun ko’maklashishga intilmoqda.
+        <br /><br />
+        Kompaniya ustuvorliklari – xalqaro standartlarga muvofiq va zamonaviy tendensiyalarni hisobga olgan holda korxonalar rahbarlari va xodimlarining malakasini oshirishdan iboratdir. Bu esa o’z navbatida ekologik, seysmik, yong‘indan himoya qilish va boshqa standartlar talablariga muvofiq ishlab chiqarilayotgan qurilish materiallari sifatini oshirishga yordam beradi.
+        <br /><br />
+        Bugungi kunga kelib, "MEGAMIX" kompaniyasi quruq qurilish qorishmalari ishlab chiqarishning umumiy quvvati kuniga 2,5 ming tonnaga yetdi. Kompaniya rejasida – energiyani tejaydigan va samarador energiya texnologiyalarini joriy etish, ishlab chiqarishni uzluksiz modernizatsiya qilish, ilmiy—tadqiqot va eksperimental ishlarni rivojlantirish ko‘zda tutilgan.
+        <br /><br />`,
+        description3: `
+        <b>Logistika</b>
+        <br /><br />
+        "MEGAMIX" kompaniyasi iste’molchilar bilan uzoq muddatli shartnomalar asosida ishonchli munosabatlarni o‘rnatish uchun izlanishda bardavomdir. Bu logistika jarayonlarini boshqarish tizimini doimiy ravishda takomillashtirishni talab qiladi, ya’ni hom ashyo ta’minlab berishdan, to tayyor mahsulotni etkazib berishgacha bo’lgan jarayonlarni o’z ichiga oladi.
+        <br /><br />
+        
+        "MEGAMIX" kompaniyasi o‘zining xususiy avtoparkiga ega bo’lib, bular: 20 dan ortiq «ISUZU» yuk avtomashinalari, shuningdek uzun yuk avtomashinalari, samosvallar va 100 dan ortiq boshqa transport vositalaridir.
+        <br /><br />
+        
+        MEGAMIX kompaniyasi ombor zaxiralarini, statik operatsiyalarni optimallashtirish, asosiy ishlab chiqarish jarayonlarini tovar-moddiy boyliklari: hom ashyo va tayyor mahsulotni hisobga olish tizimi bilan o‘zaro bog‘liqligini avtomatlashtirishni joriy etish bo‘yicha ishlarni doimiy ravishda amalga oshiradi.
+        <br /><br />
+        
+        So’ngi yillardagi eng muhim va keng ko’lamli loyhalarni qurishda "MEGAMIX" brendining quruq qurilish qorishmalari va bo‘yoqlari mamlakatimiz poytaxti va shaharlarida keng qo‘llanilmoqda:
+        <br /><br />
+        Andijon (Devonaboy masjidi, Sharja University), Buxoro (Bukhara Grand Hotel, Hotel Services International), Denov (Said Ataliq Madrasasi, Denov Yangi Masjidi, VBM Romiteks), Nukus (Nukus City turar-joy majmuasi), Samarqand («Samarqand» xalqaro aeroporti, Ice Arena - muz saroyi), Namangan (Istiqlol desine marketi, Rim Restaurant), Urganch (Bravo Lyuks mehmonxonasi), Xiva (Farovon Khiva Hotel), Farg‘ona (Asia.UzSupermarket).
+        <br /><br />
+        
+        <b>Qo‘llash. Xususiyatlar. Palitra.</b>
+        <br /><br />
+        Super zamonaviy binolar: madaniyat va sport ob’yektlari, masjidlar, otellar, restoranlar, savdo va turar-joy mamualari qurilishida MEGAMIX kompaniyasining quruq qurilish qorishmalarini qo‘llash –yetakchi mahalliy qurilish kompaniyalarining tanlovidir.
+        Bugungi kunda MEGAMIX – dunyoning o’ta yirik kompaniyalari buyurtmasiga ko’ra o‘z mahsulotlarini MDH davlatlariga va Markaziy Osiyoga eksport qilayotgan respublikadagi yagona kompaniyadir.
+        <br /><br />
+        
+        Zamonaviy qurilish materiallari bozori ko‘plab ishtirokchilardan iborat ekanligiga qaramay, “MEGAMIX" milliy brendi o‘zi tanlagan yo‘liga sadoqat bilan yondashib o’z yo’nalishini o‘zgartirmaydi: an’analar - innovatsiyalar - ishonch. Soha bilan birgalikda rivojlanib, biz oxirgi yangiliklarni joriy etishni davom ettiramiz, mijozlarimiz uchun eng qulay kompleks yechimlarni izlab, yangi avlod qurilish pardozlash materiallarining eng yaxshi va eng mashhur namunalarini taqdim etishda davom etamiz, barchasi siz uchun, aziz do‘stlar.
+        <br /><br />
+        Vaqt sinovidan o‘tib qozonilgan obro‘, maksimal xavfsizlik va qulaylik, biznes sherikdan ham ortiq sanalgan "MEGAMIX" - bu sizning loyihalaringizni qurishda sadoqatli va ishonchli hamkor.                
+        
+`
     },
     en: {
         title: '2023-2024 Presentation catalogue',
@@ -217,8 +221,8 @@ Like, for example, the skillfully laid out Kalyan minaret in Bukhara, which for 
 In recent years, the face of our country has changed beyond recognition. Urban planning innovations, grandiose and, at the same time, original objects of the third millennium, became a worthy continuation of the tremendous centuries-old traditions of the past. We are proud that many of them were created with the participation of advanced building and finishing materials of the National brand "MEGAMIX"
 <br /><br />
 The introduction of innovations, advanced technologies, tireless scientific research, the constant modernization of the production base, and the opening of the latest generation equipment help maintain a high leadership level for the republic's largest manufacturer. And all this - for the highest goal: strength and durability in construction. Our top priorities are maximum reliability and safety across our entire product line.
-<br /><br />
-
+<br /><br />`,
+        description2: `
 <b>"MEGAMIX": traditions, innovations, reliability!</b>
 <br /><br />
 <b>Company facts:</b>
@@ -259,8 +263,8 @@ The total number of "MEGAMIX" plants has reached six industrial enterprises in U
 The company's priorities are advanced training of managers and employees of enterprises, taking into account modern trends, and following international standards. Our priorities help to improve the quality of manufactured building materials that meet the requirements of environmental friendliness, seismicity, fire safety, and other criteria.
 <br /><br />
 To date, the total production capacity of dry construction mixtures of the MEGAMIX company has reached 2.5 thousand tons/day. The company's plans include further introducing energy-saving and energy-efficient technologies, constant modernization of production, and research and design work development.
-<br /><br />
-
+<br /><br />`,
+        description3: `
 <b>Logistic activities</b>
 <br /><br />
 MEGAMIX company seeks to build trusting relationships with consumers based on long-term contracts. Relationship building requires continuous improvement of the logistics process management system: from supplying raw materials to delivering finished products.
@@ -283,7 +287,7 @@ Today MEGAMIX is the only company in the republic that exports its products to t
 Despite many modern construction materials market players, the national brand MEGAMIX remains true. It does not change its course: traditions - innovations - reliability. Developing together with the industry, we continue to introduce the latest innovations and the best and most popular samples of new-generation building finishing materials. We are always looking for the most convenient integrated solutions for our customers: for you, our dear friends.
 <br /><br />
 Time-tested reputation, maximum safety, and comfort: MEGAMIX is more than just a business partner who is faithful and reliable support in the construction of your projects.
-        `
+`
     },
     tr: {
         title: '2023-2024 Sunum kataloğu',
@@ -299,8 +303,8 @@ Bunların çoğunun ulusal marka "MEGAMIX" in gelişmiş inşaat ve kaplama malz
 <br /><br />
 Yeniliklerin, ileri teknolojilerin tanıtılması, yorulmak bilmeyen bilimsel araştırmaların yanı sıra üretim üssünün sürekli modernizasyonu, en yeni nesil ekipmanların devreye alınması gibi faktörler, ülkedeki en büyük üreticiye yüksek düzeyde liderliği sürdürmeye yardımcı olmaktadır.
 Ve tüm bunlar - en yüksek hedef olan inşaatların sağlamlığı ve dayanıklılığı uğrunadır. Tüm ürün yelpazemizde maksimum güvenilirlik ve güvenlikdir- bunlar bizim en önemli önceliklerimizdir!
-<br /><br />
-
+<br /><br />`,
+description2: `
 <b>"MEGAMIX": gelenekler- yenilikler- güvenilirlik!</b>
 <br /><br />
 <b>Hakkımızda;</b>
@@ -340,8 +344,8 @@ MEGAMIX şirketinin tüm ürün yelpazesi, ISO 9001:2008 kalite yönetim sistemi
 Şirketin öncelikleri, çağdaş trendleri dikkate alarak ve uluslararası standartlara uygun olarak, işletme yöneticilerinin ve çalışanlarının ileri düzeyde eğitimidir. Bu, çevre dostu olma, depremsellik, yangın güvenliği ve diğer standartların gereksinimlerini karşılayan yapı malzemelerinin kalitesini arttırmaya yardımcı olur.
 <br /><br />
 Bugün, MEGAMIX Şirketinin toplam kuru karışım yapı malzemelerinin üretim kapasitesi 2,5 bin ton/gün'e ulaştı. Şirketin planlamasında enerji tasarrufunu ve enerji verimli teknolojilerin üretime daha fazla dahil edilmesi, üretimin sürekli modernizasyonu, araştırma ve geliştirme çalışmalarının geliştirilmesi yer alır.
-<br /><br />
-
+<br /><br />`,
+description3: `
 <b>Lojistik</b>
 <br /><br />
 MEGAMIX, müşterileriyle uzun vadeli karşılıklı yarar sağlayan anlaşmalar temelinde güvene dayalı ilişkiler kurmaya çalışır. Bu, hammadde tedarikinden bitmiş ürünlerin teslimine kadar lojistik süreç yönetim sisteminin sürekli iyileştirilmesini gerektirir.
@@ -365,6 +369,7 @@ Bugün MEGAMIX, ürünlerini dünyanın en büyük şirketlerinin siparişiyle B
 Modern yapı malzemeleri pazarındaki çok sayıda rakiplara rağmen, MEGAMIX ulusal markası, rotasını değiştirmeden gelenekler – yenilikler – güvenilirlik politikasina hep sadık kalır. Sektörle birlikte gelişerek, Siz, Değerli Müşterilerimiz için sürekli olarak en uygun kapsamlı çözümleri aramaya, yeni nesil inşaat kaplama malzemelerinin en iyi ve en beğenilen örneklerini sunmaya devam etmekteyiz.
 <br /><br />
 Zaman içinde kendini kanıtlamış itibar, maksimum güvenlik ve rahatlık, bir iş ortağından daha fazlası olarak kabul edilen "MEGAMIX", projelerinizin yapımında sadık ve güvenilir bir ortaktır.
-        `
+
+`
     }
 }

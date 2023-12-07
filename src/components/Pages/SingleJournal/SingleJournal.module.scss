@@ -41,10 +41,42 @@
             line-height: 30px;
         }
     }
+
+    &__images{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        & > div{
+            max-width: 50%;
+            width: 100%;
+            position: relative;
+            aspect-ratio: 1619/850;
+        }
+    }
+
+    &__buildings{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & > div{
+            width: 100%;
+            position: relative;
+            aspect-ratio: 1377/867;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
     .news {
         padding: 25px 0;
+
+        &__images{
+            gap: 10px;
+            & > div{
+                max-width: 100%;
+            }
+        }
     }
 }
